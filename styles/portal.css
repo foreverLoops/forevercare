@@ -45,7 +45,8 @@ body {
   background-color: #327f92;
   padding: 10px;
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar ul {
@@ -182,42 +183,4 @@ body {
 .medications ul li {
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
-}
-
-/* Footer*/
-
-footer{
-  height: 23vh;
-  display: flex;
-  color: white;
-}
-footer .footer-img{
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-}
-
-.footer-img img{
-  height: 221px;
-  width: 100%;
-}
-
-
-footer .footer_list-box{
-  height: 100%;
-  width: 70vw;
-  background-color: #327f92;
-  padding: 1rem 5rem;
-}
-.footer_list{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.footer_list li{
-  list-style: none;
-  line-height: 1.4rem;
 }
