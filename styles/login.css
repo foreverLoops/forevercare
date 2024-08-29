@@ -1,0 +1,104 @@
+
+*{
+    margin: 0;
+  }
+  body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #BBE6E4;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(/media/login-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        /* width: 100vw; */
+        backdrop-filter: blur(10px);
+  }
+  main{
+    padding: 12px;
+    width: 50vw;
+    margin-top: 7%;
+    background:linear-gradient( to top, rgba(16, 129, 133, 0.342), white );
+    border: 2px solid #393f4177;
+    border-radius: 6px;
+  }
+
+  input[type=text]{
+      padding: 12px 20px;
+      margin: 8px 0;
+      display:flex;
+      border: 2px solid #1f7f9177;
+      border-radius: 4px;
+    }
+    input[type=email]{
+      padding: 12px 20px;
+      margin: 8px 0;
+      display:flex;
+      border: 2px solid #1f7f9177;
+      border-radius: 4px;
+    }
+
+   .log_in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+    h1{
+      text-align: center;
+    }
+
+    label{
+      text-align:center;
+    }
+
+    span{
+      display:inline-block;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    input[type=password]{
+      display:flex;
+      align-items: center;
+      justify-content: center; 
+      padding: 12px 20px;
+      margin: 8px 0;
+      display:flex;
+      border: 2px solid #1f7f9177;
+      border-radius: 4px;
+
+    }
+
+  p{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 3px solid #1f7f9177;
+    border-radius: 5px;
+    margin: auto;
+  }
+
+  .sign-up-link{
+    color: aqua;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .password{
+    font-size:12px;
+    align-items: first baseline; 
+    margin-top: -5px;
+  }
+  
+  input:focus {
+    outline: none;
+}
