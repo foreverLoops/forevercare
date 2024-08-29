@@ -1,0 +1,181 @@
+   <!DOCTYPE html>
+   <html lang="en">
+
+   <head>
+      <link rel="stylesheet" href="/styles/signup.css" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sign-Up_Form </title>
+   </head>
+   <body>
+      <main>
+         <section class="sign">
+               <div class="header">
+                  Sign-Up
+               </div>
+               <div class="intro">
+                  <p>New Patient Registration</p>
+                  <p>Welcome Please fill in the Following Form</p>
+               </div>
+               <h2>Registration</h2>
+               <div class="dateregistration">
+                  <form action="submitDate.html">
+                     <label for="Date">
+                           <input type="date" id="date" name="date" placeholder="Date of Registration">
+                     </label>
+                  </form>
+               </div>
+         </section>
+         <hr>
+         <section>
+               <h2>Patient Details</h2>
+               <form class="patient_name" action="getfrom.html">
+                  <input type="text" name="name" id="name" placeholder="Name">
+                  <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+               </form>
+               <form class="patient_name" action="">
+                  <select class="patient_name" name="gender" id="gender" type="text">
+                     <option value="" disabled selected hidden>Please Select Gender</option>
+                     <option value="Male">Male</option>
+                     <option value="Female">Female</option>
+                  </select>
+                  <input type="number" name="age" id="age" placeholder="Age">
+               </form>
+               <form class="patient_name" action="">
+                  <select type="months" name="months" id="months">
+                     <option value="" disabled selected hidden>Select Month</option>
+                     <option value="January">January</option>
+                     <option value="Febuary">February</option>
+                     <option value="March">March</option>
+                     <option value="April">April</option>
+                     <option value="May">May</option>
+                     <option value="June">June</option>
+                     <option value="July">July</option>
+                     <option value="August">August</option>
+                     <option value="September">September</option>
+                     <option value="October">October</option>
+                     <option value="November">November</option>
+                     <option value="December">December</option>
+                  </select>
+                  <input type="day" id="day" name="day" placeholder="Day">
+                  <input type="year" id="year" name="year" placeholder="Year">
+               </form>
+               <form class="patient_name" action="">
+                  <input type="text" id="idnumber" name="idnumber" placeholder="ID Number/Passport">
+                  <input type="tel" id="phone" name="phone" placeholder="076-870-2153">
+               </form>
+               <form class="patient_name" action="">
+                  <input type="email" id="email" name="email" placeholder="Email">
+               </form>
+               <h3>Address</h3>
+               <form class="patient_name" action="">
+                  <input type="text" id="address" name="address" placeholder="Street Address Line 1">
+                  <input type="text" id="address" name="address" placeholder="Street Address Line 2">
+               </form>
+               <form class="patient_name" action="">
+                  <form class="" action="">
+
+                  </form>
+                  <form class="patient_name" action="">
+                     <input type="text" id="city" name="city" placeholder="City">
+                     <select name="" id="">
+                           <option value="" disabled selected hidden>Select Province</option>
+                           <option value="">Western Cape</option>
+                           <option value="">Northen Cape</option>
+                           <option value="">Eastern Cape</option>
+                           <option value="">Free State</option>
+                           <option value="">Kwa-Zulu Natal</option>
+                           <option value="">Gauteng</option>
+                           <option value="">Mpumalanga</option>
+                           <option value="">Limpopo</option>
+                           <option value="">North West Province</option>
+                     </select>
+                  </form>
+                  <form class="patient_name" action="">
+                     <input type="text" id="" name="" placeholder="Postal/Zip Code">
+                  </form>
+                  <form class="patient_name" action="">
+                     <select name="status" id="status">
+                           <option value="" disabled selected hidden>Maritial Status</option>
+                           <option value="">Single</option>
+                           <option value="">Married</option>
+                           <option value="">Divorced</option>
+                           <option value="">Legally Separeted</option>
+                           <option value="">Widowe</option>
+                     </select>
+
+                  </form>
+                  <h3>Is The Patient Younger Than 18?</h3>
+                  <input type="radio" id="yes" name="under18" value="yes">
+                  <label for="yes">Yes</label>
+                  <input type="radio" id="no" name="under18" value="no">
+                  <label for="no">No</label>
+
+                  <form class="patient_form" action="getfrom.html">
+                     <input type="text" id="parent/gardian" name="parent/gardian" placeholder="Parent Name/Gardian">
+                     <input type="text" id="lastname" name="lastName" placeholder="LastName">
+                  </form>
+                  <form class="patient_form" action="">
+                     <input type="text" id="idnumber" name="idnumber" placeholder="ID Number">
+                     <input type="email" id="email" name="email" placeholder="Email">
+                  </form>
+                  <form class="patient_form" action="">
+                     <input type="tel" id="phonenumber" name="phonenumber" placeholder="Phone Number">
+                     <input type="tel" id="alternative number" name="alternative number"
+                           placeholder="alternative number">
+                  </form>
+               </form>
+         </section>
+         <hr>
+         <section>
+               <h2>Emergency Contact</h2>
+               <form class="patient_name" action="">
+                  <input type="text" id="name" name="name" placeholder="Name">
+                  <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+               </form>
+               <form class="patient_name" action="">
+                  <input type="text" id="idnumber" name="idnumber" placeholder="ID Number">
+                  <input type="text" id="lastname" name="lastname" placeholder="Contact Number">
+               </form>
+               <form class="patient_name" action="">
+                  <input type="text" id="relationship" name="relationship" placeholder="Relationship">
+               </form>
+         </section>
+         <section>
+               <h3>Health History</h3>
+               <textarea id="text" name="text" placeholder="Write something.." style="height:200px">
+                  </textarea>
+         </section>
+         <h3>Taking any Medications currently</h3>
+         <input type="radio" id="yes" name="under18" value="yes">
+         <label for="yes">Yes</label>
+         <input type="radio" id="yes" name="under18" value="yes">
+         <label for="yes">No</label>
+         <hr>
+         <h2>Insurance Information</h2>
+         <form class="patient_name" action="">
+               <input type="text" id="" name="" placeholder="Insurance">
+               <input type="text" id="" name="" placeholder="Insurance ID">
+         </form>
+         <h4>Policy Holder's Details</h4>
+         <form class="patient_name" action="">
+               <input type="text" id="firstname" name="" placeholder="First Name">
+               <input type="text" id="lastname" name="" placeholder="Last Name">
+         </form>
+         <form class="patient_name" action="">
+               <input type="text" id="idnumber" name="" placeholder="ID Number">
+               <input type="email" id="email" name="email" placeholder="Email">
+         </form>
+         <form class="patient_name" action="">
+               <input type="tel" id="" name="" placeholder="Contact Number">
+         </form>
+         <hr>
+         <span class="submit_button">
+               <form action="submit">
+                  <input type="submit" id="submit" name="submit">
+               </form>
+         </span>
+      </main>
+   </body>
+
+   </html>

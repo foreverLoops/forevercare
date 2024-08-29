@@ -45,7 +45,8 @@ body {
   background-color: #327f92;
   padding: 10px;
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar ul {
@@ -66,6 +67,8 @@ body {
 }
 
 /* Sidebar Styling */
+
+
 .container {
   display: flex;
 }
@@ -75,7 +78,7 @@ body {
   background-color: #327f92;
   padding: 20px;
   color: white;
-  height: 100%;
+  height: 700px;
   box-sizing: border-box;
 }
 
@@ -111,6 +114,8 @@ body {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  background-image: none;
+  height: 700px;
 }
 
 .timeline {
@@ -183,15 +188,15 @@ body {
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
 }
-
-/* Footer*/
-
+/* footer */
 footer{
-  height: 23vh;
+  height: 32vh;
   display: flex;
   color: white;
 }
 footer .footer-img{
+  width: 30vw;
+  background: url("/media/hero.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -199,18 +204,35 @@ footer .footer-img{
   justify-content: center;
   align-items: baseline;
 }
-
-.footer-img img{
-  height: 221px;
-  width: 100%;
+footer .footer-img h5{
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgb(255, 255, 255, 0.8);
+  color: #2c2c2c;
+  border-radius: 5px;
 }
-
-
+.footer-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+.footer-socials li{
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
 footer .footer_list-box{
-  height: 100%;
   width: 70vw;
   background-color: #327f92;
   padding: 1rem 5rem;
+}
+.footer_list-box h5{
+  text-align: center;
+  font-size: 1rem;
+}
+.footer_list-box i{
+  margin-right: 0.5rem;
 }
 .footer_list{
   display: flex;
@@ -220,4 +242,11 @@ footer .footer_list-box{
 .footer_list li{
   list-style: none;
   line-height: 1.4rem;
+}
+.footer-text {
+  border-top: 1px solid white;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
 }

@@ -25,6 +25,10 @@ body{
 .small-navbar li{
     margin: 0 2rem;
 }
+.small-navbar a{
+    text-decoration: none;
+    color: black;
+}
 
 .navbar{
     /* background-color: #084B83; */
