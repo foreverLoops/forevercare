@@ -145,6 +145,9 @@ aside{
     border-top:  2px solid #327f92;
 
 }
+aside a, .about-text a{
+    text-decoration: none;
+}
 .heading-left{
     margin-left:1rem ;
     background: #327f92;
@@ -184,12 +187,16 @@ aside{
     background: #084B83;
     cursor: pointer;
 }
+
 .button-style{
     padding: 0.5rem;
     border-radius: 5px;
     border: none;
     background-color: #2FC86C;
     color: white;
+}
+.button-style i{
+    margin-left: 5px;
 }
 
 /* how we work */
