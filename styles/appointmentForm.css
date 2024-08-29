@@ -7,16 +7,14 @@ body{
     padding: 0%;
     width:100vw;
     /* height: 100vh; */
-    background-image:url(/medical-2-medical.webP)  ;
+    background-image: url(/media/backgroundForm.webP);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: rgb(255, 255, 255);
     font-family:'Times New Roman', serif ;
 }
 
-form{
-    backdrop-filter: blur(10px);
-    border:1px solid #2FC86C;
-     
-}
+
 
 
 
