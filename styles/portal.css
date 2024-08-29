@@ -108,16 +108,6 @@ body {
 }
 
 /* Content Section */
-.container{
-  background: url(/media/backgroundImage.png);
-  background-attachment: fixed;
-  padding: 2rem;
-  padding-bottom: 5rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
 .content {
   flex-grow: 1;
   padding: 20px;
