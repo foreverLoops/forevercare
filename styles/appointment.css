@@ -44,12 +44,24 @@ h1{
       font-weight: 500;
       font-style: normal;
     text-decoration: underline;
-    
-    
 }
     
+.heading{
+    display: flex;
+}
 
+aside{
+    /* display: inline; */
+    font-size: 30px;
+    padding: 10px;
+}
+.fa-solid{opacity: 0;
+}
 
+.fa-solid:hover{
+    opacity: 1;
+    cursor: pointer;
+}
 
 section{
     margin-top: 10px;
