@@ -12,7 +12,6 @@ body {
 /* header styling */
 .header {
   background-color: #327f92;
-  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,8 +24,11 @@ body {
 }
 
 .header .logo img {
-  height: 40px;
-  margin-right: 10px;
+  width: 100px;
+}
+
+.header span{
+  margin-right: auto;
 }
 
 .header .profile {
