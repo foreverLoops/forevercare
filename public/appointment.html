@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,intial scale=1.0">
     <link rel="stylesheet" href="/styles/appointment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1475cbfb76.js" crossorigin="anonymous"></script>
 
     <title>Appointment Form</title>
@@ -12,9 +15,11 @@
 
 <body>
     <main>
-        <h1>Patient Appointment Form <i class="fa-solid fa-notes-medical "></i></h1>
-       
+        <div class="heading">
+            <aside><a href="/public/landingPage.html"><i class="fa-solid fa-house"></i></a></aside><h1>Patient Appointment Form <i class="fa-solid fa-notes-medical "></i></h1>
+        </div>
             <form>
+                   
                 <section>
                     <div class="info-details">
                         <span><label for="name" >Name & Surname</label></span>
@@ -47,41 +52,43 @@
             
                 <section class="appointment_info">
                     <h2>Medical Departments of Appointments</h2>
-                        <p>Please Select Your Appointment:</p>    
-                    <ul>
-                        <div>
-                            <li class="app1"><input name="Appointment" type="radio"> Cardiology</li>
-                            <li class="app1"><input name="Appointment" type="radio"> Radiology</li>
-                            <li class="app1"><input name="Appointment" type="radio"> Psychiatry</li>
-                            <li class="app1"><input name="Appointment" type="radio"> Family Planning</li>
-                            <li class="app1"><input for="other" name="Appointment" type="radio"> Other...</li>
-                        </div>
-                    
-                        <div>
-                            <li><input name="Appointment" type="radio"> Allergic Diseases</li>
-                            <li><input name="Appointment" type="radio"> Physio</li>
-                            <li><input name="Appointment" type="radio"> Pediatrics</li>
-                            <li><input name="Appointment" type="radio"> INR</li>
-
-                        </div>
+                        <p>Please Select Your Appointment:</p>  
+                    <div class="app01">
+                       <ul>
+                            <div class="appoint">
+                                <li class="app1"><input name="Appointment" type="radio"> Cardiology</li>
+                                <li class="app1"><input name="Appointment" type="radio"> Radiology</li>
+                                <li class="app1"><input name="Appointment" type="radio"> Psychiatry</li>
+                                <li class="app1"><input name="Appointment" type="radio"> Family Planning</li>
+                                <li class="app1"><input for="other" name="Appointment" type="radio"> Other...</li>
+                            </div>
                         
-                        <div>
-                            <li><input name="Appointment" type="radio"> Dermatology</li>
-                            <li><input name="Appointment" type="radio"> Disorders</li>
-                            <li><input name="Appointment" type="radio"> Infectious Diseases</li>
-                            <li><input name="Appointment" type="radio"> Nutrition & Dietician</li>
+                            <div class="appoint">
+                                <li class="app1"><input name="Appointment" type="radio"> Allergic Diseases</li>
+                                <li class="app1"><input name="Appointment" type="radio"> Physio</li>
+                                <li class="app1"><input name="Appointment" type="radio"> Pediatrics</li>
+                                <li class="app1"><input name="Appointment" type="radio"> INR</li>
+
+                            </div>
+                            
+                            <div>
+                                <li class="app1"><input name="Appointment" type="radio"> Dermatology</li>
+                                <li class="app1"><input name="Appointment" type="radio"> Disorders</li>
+                                <li class="app1"><input name="Appointment" type="radio"> Infectious Diseases</li>
+                                <li class="app1"><input name="Appointment" type="radio"> Nutrition & Dietician</li>
+                            </div>
+                        </ul>
+                        <div class="info-other">
+                            <textarea id="other"  rows="3" cols="0" placeholder="please specify"></textarea>
                         </div>
-                    </ul>
-                    <div class="info-other">
-                        <textarea id="other" class="info" rows="3" cols="0" placeholder="please specify"></textarea>
                     </div>
 <!-- <hr>  -->
                 </section>
                 
-                <section class="date">
+                <section >
                         <table cellspacing="10" cellpadding="5">
                                 
-                            <div>
+                    <div class="date">
                                 <th class="month" colspan="7">August 2024</th>
                                     <tr class="days">
                                         <th>Mon</th>
@@ -144,10 +151,12 @@
                                     </tr>
                             </div>
                         </table>
-                    <div>
-                        <label >Time of the Appointment:
-                            <input type="time" required>
-                        </label>
+                    
+                        <div class="app-time" >
+                            <label class="time" >Time of the Appointment:
+                                <input type="time" required>
+                            </label>
+                        </div>
                     </div>    
                 </section>
 
