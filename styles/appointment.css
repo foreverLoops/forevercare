@@ -34,28 +34,36 @@ form{
 
 /* this is the first section containing the information on the patients */
 h1{
-    margin-left:250px;
+    margin-left:170px;
     margin-bottom: 20px;
     color: #ffffff;
     font-size: 3.4em;
     font-style: italic;
-      font-family: "Lora", serif;
-      font-optical-sizing: auto;
-      font-weight: 500;
-      font-style: normal;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     text-decoration: underline;
-}
-    
-.heading{
-    display: flex;
+    display: inline;
 }
 
+    
+
+
 aside{
-    /* display: inline; */
     font-size: 30px;
     padding: 10px;
+    width:fit-content;
+    display: inline;
 }
 .fa-solid{opacity: 0;
+}
+
+img{
+    border: 2px solid rgba(255, 255, 255, 0.158);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+
 }
 
 .fa-solid:hover{
@@ -253,7 +261,7 @@ input[type="time"]{
 }
 
 .submit_button{
-    margin-left: 25vw;
+    margin-left: 20vw;
 }
 
 button[type="submit"]{
@@ -265,11 +273,12 @@ button[type="submit"]{
     box-shadow:0 12px 16px 0 #2fc86ca4 0 17px 50px 0 #abe0ee;
     cursor: pointer;
     margin-bottom: 20px;
+    background-color: #6cdad4;
 
 }
 
 button:hover{
-    background-color: #6cdad4;
+    
     box-shadow:0 0 3px 2px #6cdad4 ;
 
 }
