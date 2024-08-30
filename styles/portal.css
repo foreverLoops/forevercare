@@ -50,6 +50,7 @@ for profile pictures */
   padding: 0.5rem;
   border-radius: 100%;
   margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
