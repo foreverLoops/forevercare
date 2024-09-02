@@ -229,6 +229,7 @@ aside a, .about-text a{
 .instruction-info .instruction-heading{
     margin-bottom: 1rem;
 }
+/* carousel */
 .carousel-container{
     width: 50vw;
     height: 50vh;
@@ -236,11 +237,35 @@ aside a, .about-text a{
     align-items: center;
     justify-content: center;
 }
-.carousel-box{
+.gallery{
+    width: 360px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: scroll;
+}
+.gallery div{
     width: 350px;
     height: 350px;
     background-color: #BBE6E4;
     border-radius: 10px;
+    margin-right: 1.1rem;
+    flex: none;
+}
+.gallery::-webkit-scrollbar{
+     /* takes scroll bar away*/
+    display: none;
+}
+.gallery img{
+    width: 130px;
+    margin-top: 2rem;
+}
+.gallery-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 /* FAQ */
 .FAQ-section h1{
@@ -534,13 +559,14 @@ form button{
 /* FOOTER */
 footer{
     /* background-color: #084B83; */
-    height: 32vh;
     display: flex;
+    flex-direction: row-reverse;
     color: white;
 }
 footer .footer-img{
-    width: 30vw;
-    background: url("/media/hero.jpg");
+    width: 19.5vw;
+    background: url("../media/forevercare-logo.png");
+    /* background-color: #327f92; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -584,8 +610,13 @@ footer .footer_list-box{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
-.footer_list li{
+.footer_list dt{
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.footer_list li, .footer_list dl{
     list-style: none;
     line-height: 1.4rem;
 }
