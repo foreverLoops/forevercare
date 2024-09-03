@@ -3,31 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForeverCare</title>
+    <title>aboutUs page</title>
     <link rel="stylesheet" href="/styles/aboutUs.css">
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            <span>021 123 4566</span>
-            <span>Salt River, Cape Town, South Africa</span>
-            <div class="auth-links">
-                <a href="#">login</a>
-                <a href="#">signup</a>
-            </div>
-        </div>
-        <nav>
-            <div class="logo">
-                <h1>FOREVERCARE</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">department</a></li>
-                <li><a href="#">contact</a></li>
+        
+        <nav class="small-navbar">
+            <ul>
+                <li><i class="fa-solid fa-phone"></i>021 123 4566</li>
+                <li><i class="fa-solid fa-location-dot"></i>Saltriver, Cape Town, South Africa</li>
+                <li><a href="/public/login.html">login</a> | <a href="/public/signup.html">signup</a> </li>
             </ul>
-            <a href="#" class="appointment-btn">Appointment</a>
+        </nav>
+        <nav class="navbar">
+            <h4>FOREVERCARE</h4>
+            <ul>
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#departments">
+                    <li>Department</li>
+                </a>
+                <a href="#services">
+                    <li>Services</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact</li>
+                </a>
+                <li><button class="button-style mobile-button">Appointment</button></li>
+            </ul>
+            <div class="user-box">
+                <button class="button-style" id="mobile-button">Appointment</button>
+                <a href="portal.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+            <div class="mobile">
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+           
             </nav>
           </header>
         <main>
