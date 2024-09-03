@@ -76,7 +76,7 @@ body{
 .mobile {
     display: none;
 }
-.user-box i{
+.fa-user {
     background: #BBE6E4;
     padding: 0.5rem;
     border-radius: 100%;
@@ -176,6 +176,7 @@ aside a, .about-text a{
     color: #2c2c2c;
     font-size: 1.2rem;
 }
+
 .button-box{
     display: flex;
     align-items: center;
@@ -229,6 +230,7 @@ aside a, .about-text a{
 .instruction-info .instruction-heading{
     margin-bottom: 1rem;
 }
+/* carousel */
 .carousel-container{
     width: 50vw;
     height: 50vh;
@@ -236,11 +238,35 @@ aside a, .about-text a{
     align-items: center;
     justify-content: center;
 }
-.carousel-box{
+.gallery{
+    width: 360px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: scroll;
+}
+.gallery div{
     width: 350px;
     height: 350px;
     background-color: #BBE6E4;
     border-radius: 10px;
+    margin-right: 1.1rem;
+    flex: none;
+}
+.gallery::-webkit-scrollbar{
+     /* takes scroll bar away*/
+    display: none;
+}
+.gallery img{
+    width: 130px;
+    margin-top: 2rem;
+}
+.gallery-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 /* FAQ */
 .FAQ-section h1{
@@ -339,6 +365,7 @@ margin: 4rem;
 .services_outer-box .box1{
     border-left: 0.5rem solid #BBE6E4;
     border-right:0.5rem solid #BBE6E4 ;
+    line-height: 2rem;
 }
 .services_outer-box .box1 h1{
     font-size: 2.1rem;
@@ -359,6 +386,7 @@ margin: 4rem;
 }
 .services-container span i{
     margin-left: 7px;
+    margin-bottom: 2rem;
 }
 .services-container span:hover{
     background-color: #327f92;
@@ -380,7 +408,7 @@ margin: 4rem;
     height: 20vh;
     margin-bottom: 2rem;
     border-radius: 5px;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     background-color: white;
     border-right: 1rem solid #327f92;
     color: #327f92;
@@ -390,7 +418,6 @@ margin: 4rem;
 
 .services-box:nth-child(3){
     background-color: #BBE6E4;
-    border-right: 1rem solid #BBE6E4;
 }
 
 .services-box:nth-child(n + 4), .services-box:nth-child(-n + 2 ){
@@ -411,6 +438,7 @@ margin: 4rem;
     flex-direction: column;
     text-align: center;
 }
+
 
 .departments-box p , .departments-box h6, .services-box p, .services-box h6{
     display:none;
@@ -504,6 +532,7 @@ form{
 form textarea{
     padding: 0.5rem;
     resize: none;
+    width: 25vw;
 }
 form input{
     width: 25vw;
@@ -533,14 +562,15 @@ form button{
 
 /* FOOTER */
 footer{
-    /* background-color: #084B83; */
-    height: 32vh;
+    background-color: #327f92;
     display: flex;
+    flex-direction: row-reverse;
     color: white;
 }
 footer .footer-img{
-    width: 30vw;
-    background: url("/media/hero.jpg");
+    width: 19.5vw;
+    background: url("../media/forevercare-logo.png");
+    /* background-color: #327f92; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -548,13 +578,13 @@ footer .footer-img{
     justify-content: center;
     align-items: baseline;
 }
-footer .footer-img h5{
+/* footer .footer-img h5{
     margin-top: 0.5rem;
     padding: 0.5rem;
     background-color: rgb(255, 255, 255, 0.8);
     color: #2c2c2c;
     border-radius: 5px;
-}
+} */
 .footer-socials{
     display: flex;
     justify-content: center;
@@ -570,7 +600,6 @@ footer .footer_list-box{
     width: 70vw;
     background-color: #327f92;
     /* background: linear-gradient(to top, #327f92 , #084B83 50% ); */
-
     padding: 1rem 5rem;
 }
 .footer_list-box h5{
@@ -584,8 +613,13 @@ footer .footer_list-box{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
-.footer_list li{
+.footer_list dt{
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.footer_list dl{
     list-style: none;
     line-height: 1.4rem;
 }
@@ -596,4 +630,229 @@ footer .footer_list-box{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+
+@media screen and (max-width:850px){
+    .hero article {
+        width: 48vw;
+        margin: 2rem 0;
+    }
+    .about .about-text {
+        font-size: 1rem;
+    }
+    .heading-left h1 {
+        font-size: 1.3rem;
+    }
+    .heading-left h6, .heading-center h6 {
+        font-size: 0.65rem;
+    }
+    /* services */
+    .heading-center h1 {
+        font-size: 1.5rem;
+    }
+    .services_outer-box .box1 h1 {
+        font-size: 1.5rem;
+    }
+    .services_outer-box .box1 h6 {
+        font-size: 1rem;
+    }
+    /* how we work */
+    .instruction-info {
+        margin-left: 2rem;
+    }
+    .instruction-info h1 {
+        font-size: 2.7rem;
+    }
+    .instruction-info h2 {
+        font-size: 1.6rem;
+    }
+    .gallery div {
+        width: 270px;
+        height: 270px;
+    }
+    .gallery-info h2{
+        font-size: 1rem;
+    }
+    .gallery img {
+        width: 100px;
+    }
+    .gallery {
+        width: 270px;
+        height: 270px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    .instruction-info p {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    /* FAQ */
+    .FAQ-box {
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 0.7rem;
+        width: 20rem;
+    }
+    .FAQ-section h2 {
+        font-size: 1.2rem;
+        color: #327f92;
+    }
+    .FAQ-section h1 {
+        font-size: 2rem;
+    }
+
+    /* footer */
+    footer .footer_list-box {
+        width: 75vw;
+        padding: 1rem 0rem;
+    }
+    .footer_list dt{
+        font-weight: 600;
+    }
+    .footer_list dd{
+        font-size: 0.8rem;
+    }
+
+    .small-navbar ul, .navbar ul {
+        font-size: 0.7rem;
+    }
+
+
+    .mobile{
+        display: inline;
+    }
+    .navbar ul {
+        display: inline-block;
+        position: absolute;
+        top: 6.5rem;
+        right: 0.2rem;
+        background: #327f92;
+        height: 40vh;
+        width: 30vw;
+        border-radius: 0.5rem;
+        border: 1px solid white;
+        padding: 12px 0;
+        line-height: 1.5rem;
+        z-index: 1;
+    }
+    .navbar li{
+        padding-left: 0;
+    }
+    .navbar button {
+        margin-right: 0;
+    }
+    .navbar button {
+        display: none;
+    }
+    .navbar li .mobile-button{
+        display: inline-block;
+    }
+    .user-box{
+        display: none;
+    }
+    .mobile i{
+        margin-left: 1rem;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .departments-box, .services-box{
+        width: 34vw;
+    }
+    .services-box:nth-child(3){
+        order: -1;
+
+    }.services-box {
+        line-height: 1rem;
+    }
+    .services_outer-box .box1 {
+        border-left: 0.5rem solid #BBE6E4;
+        border-right: 0.5rem solid #BBE6E4;
+        line-height: 1.5rem;
+    }
+    .departments-box p, .departments-box h6, .services-box p, .services-box h6 {
+        font-size: 0.8rem;
+    }
+    .FAQ-box {
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 600px){
+    .departments-box, .services-box {
+        width: 50vw;
+    }
+    .services_outer-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 4rem;
+    }
+    .see_more-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+    .see_more-box span {
+        height: 1rem;
+        margin: 0;
+    }
+    /* how we work */
+    .instruction-heading{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90vw;
+        margin-top: 1rem;
+    }
+    .instuctions-box {
+        flex-direction: column;
+    }
+    .instruction-info p {
+        width: 90vw;
+        justify-content: left;
+        color: white;
+        font-size: 1.2rem;
+    }
+    .carousel-container {
+        width: 100vw;
+    }
+
+    /* faq */
+    .FAQ-box {
+        width: 100vw;
+    }
+
+    /* contact */
+    .map-box {
+        height: 26rem;
+    }
+    .map-box iframe {
+        height: 26rem;
+    }
+    .form-box {
+        width: 60vw;
+        height: 26rem;
+
+    }
+    form input {
+        width: 45vw;
+        height: 1.5rem;
+    }
+    form textarea {
+        width: 45vw;
+    }
+
+    /* footer */
+
 }

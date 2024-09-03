@@ -15,12 +15,16 @@
 
 <body>
     <main>
-        <div class="heading">
-            <aside><a href="/public/landingPage.html"><i class="fa-solid fa-house"></i></a></aside><h1>Patient Appointment Form <i class="fa-solid fa-notes-medical "></i></h1>
-        </div>
-            <form>
-                   
-                <section>
+        <!-- This part is for the heading and the home button -->
+         <heading>
+            <div class="heading">
+                <aside><a href="/public/landingPage.html"><img src="/media/logo.png" width="100" title="This will take you to the Home Page"></a></aside>
+                <h1>Patient Appointment Form <i class="fa-solid fa-notes-medical "></i></h1>
+            </div>
+        </heading>
+    <form>
+                   <!-- This part if the top part of the form until contact preference -->
+        <section>
                     <div class="info-details">
                         <span><label for="name" >Name & Surname</label></span>
                             <input class="info" id ="name" name="Name" type="text" placeholder="e.g John Doe" required>
@@ -43,24 +47,27 @@
 
                     <div class="info-details">
                         <span><label  for="contact" >Contact Preference:</label></span>
-                        <label><input id="contact" class="info2" name="contact" type="radio"> Via Phone</label>
-                        <label><input  class="info3"  name="contact" type="radio"> Via Email</label>
+                        <div class="radio01">
+                            <div ><label><input id="contact"  name="contact" type="radio"> Phone</label></div>
+                            <div ><label><input  class="info3"  name="contact" type="radio"> Email</label></div>
+                        </div>
                     </div> 
 
                 </section>
         <!-- <hr> -->
-            
+            <!-- This part is for the Medical appointments  -->
+
                 <section class="appointment_info">
                     <h2>Medical Departments of Appointments</h2>
                         <p>Please Select Your Appointment:</p>  
                     <div class="app01">
                        <ul>
                             <div class="appoint">
-                                <li class="app1"><input name="Appointment" type="radio"> Cardiology</li>
-                                <li class="app1"><input name="Appointment" type="radio"> Radiology</li>
-                                <li class="app1"><input name="Appointment" type="radio"> Psychiatry</li>
-                                <li class="app1"><input name="Appointment" type="radio"> Family Planning</li>
-                                <li class="app1"><input for="other" name="Appointment" type="radio"> Other...</li>
+                                <li class="app01"><input name="Appointment" type="radio"> Cardiology</li>
+                                <li class="app01"><input name="Appointment" type="radio"> Radiology</li>
+                                <li class="app01"><input name="Appointment" type="radio"> Psychiatry</li>
+                                <li class="app01"><input name="Appointment" type="radio"> Family Planning</li>
+                                <li class="app01"><input for="other" name="Appointment" type="radio"> Other...</li>
                             </div>
                         
                             <div class="appoint">
@@ -83,6 +90,8 @@
                         </div>
                     </div>
 <!-- <hr>  -->
+
+<!-- this part is the Table where the calendar is  -->
                 </section>
                 
                 <section >

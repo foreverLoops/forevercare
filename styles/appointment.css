@@ -7,8 +7,9 @@ body{
     padding: 0%;
     background-image: url(/media/backgroundForm.webP);
     /* backdrop-filter: blur(1px); */
-    background-color: #1f84d2 ;
+    /* background-color: #1f84d2 ; */
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;  ;
     color: rgb(255, 255, 255 ) ;
     font-family: "Merriweather", serif;
@@ -31,31 +32,43 @@ form{
 }
 
 
-
 /* this is the first section containing the information on the patients */
 h1{
-    margin-left:250px;
-    margin-bottom: 20px;
+    margin-left: 350px;
     color: #ffffff;
     font-size: 3.4em;
     font-style: italic;
-      font-family: "Lora", serif;
-      font-optical-sizing: auto;
-      font-weight: 500;
-      font-style: normal;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     text-decoration: underline;
-}
-    
-.heading{
-    display: flex;
+    display: inline;
 }
 
 aside{
-    /* display: inline; */
     font-size: 30px;
     padding: 10px;
+    width:fit-content;
+    display: inline;
+    position: fixed;
+    
 }
-.fa-solid{opacity: 0;
+
+
+img{
+    border: 2px solid rgba(255, 255, 255, 0.158);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    background-color: #FFF;
+    margin-top: 10px;
+   
+
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition:1s ;
 }
 
 .fa-solid:hover{
@@ -69,8 +82,6 @@ section{
     margin-right: 30px;
 }
 
- 
-   
 .info{
     text-align: center;
     margin-top: 10px ;
@@ -124,6 +135,7 @@ label{
     display: inline-flex;
 }
 
+
 /* this is the second section of the information where the appointment is placed */
 
 p{
@@ -166,9 +178,11 @@ li{
 }
 
 .app1{
-    margin-left: 10px;
-    
+    margin-left: 70px;
 
+}
+.app01{
+    margin-left: 60px;
 }
 
 .appoint{
@@ -187,7 +201,7 @@ textarea{
     border: none;
     font-size: 1em;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 60px;
     margin-top: 10px ;
     margin-bottom:10px ;
     padding-bottom: 15px;  
@@ -213,14 +227,14 @@ table{
     margin-left: 20px;
     width:50vw;
     margin:20px  ;
-    padding: 25px;
+    padding: 20px;
 }
 
 td{
-    background-color:rgb(245, 245, 245);
+    background-color:rgba(245, 245, 245, 0.644);
     box-shadow: 0px 0px 5px 2px rgb(255, 255, 255);
     color:black;
-    padding:10px;
+    padding:15px 10px;
     text-align: center;
 }
 .pass{
@@ -253,7 +267,7 @@ input[type="time"]{
 }
 
 .submit_button{
-    margin-left: 25vw;
+    margin-left: 20vw;
 }
 
 button[type="submit"]{
@@ -265,11 +279,12 @@ button[type="submit"]{
     box-shadow:0 12px 16px 0 #2fc86ca4 0 17px 50px 0 #abe0ee;
     cursor: pointer;
     margin-bottom: 20px;
+    background-color: #6cdad4;
 
 }
 
 button:hover{
-    background-color: #6cdad4;
+    
     box-shadow:0 0 3px 2px #6cdad4 ;
 
 }
@@ -277,9 +292,6 @@ button:hover{
     justify-content: space-between;
 }
 
-img{
-    z-index: 3;
-}
 
 .app-time{
     display: block;
@@ -291,3 +303,145 @@ img{
     margin-left: 15vw;
    
 }
+
+@media (max-width:1024px ){
+
+    body{
+        
+        background-image: url(/media/backgroundForm.webP);
+        background-size:cover  ;
+        background-position: center;
+  
+    }
+    h1{
+        font-size: 45px;
+        margin-left: 220px;
+    }
+    span{
+    width: 35vw;
+    text-align: left;
+    
+    }
+
+    img{position:relative  ;
+        width: 70px;
+        /* margin: 1px; */
+        margin-top: 0;
+    }
+
+    aside{
+       padding: 5px;
+    }
+
+    form{
+        border-color: black;
+        margin:10px auto;
+        padding:10px
+    }
+
+    h2{
+        margin-left:70px
+    }
+    .app01{
+        margin-left: 15px;
+    }
+     .radioInfo{
+        margin:5px
+     }
+
+     .time{
+        margin:0 auto;
+     }
+
+     .submit_button{
+        margin-left: 180px;
+     }
+}
+@media (max-width:768px ){
+    
+    body{
+        
+        background-image: url(/media/backgroundForm.webP);
+        background-size:cover  ;
+        background-position:center ;
+  
+    }
+    .info{
+        margin-bottom:10px ;
+       
+    }
+
+    form{    
+    
+        width: 75vw;
+        padding: 5px;
+        border-color: #ff685d;
+        margin: 0;
+        margin-top: 45px;
+        margin-left:90px
+
+    }
+
+
+    span{
+        width: 45vw;
+        text-align: left;
+        
+    }
+
+    h1{
+        font-size: 40px;
+        text-align: center;
+        margin-left: 140px;
+    }
+
+    img{
+        position:relative  ;
+        width: 70px;
+        margin: 2px;
+    }
+
+    aside{
+        padding:0;
+        margin:0;
+    }
+    table{
+        margin: 0 auto;
+    }
+}
+@media (max-width:425px){
+    h1{
+        margin-left: 50px;
+        font-size: 30px;
+    }
+
+    form{
+        width: 85vw;
+        margin:20px auto;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column-reverse;
+        
+       
+    }
+
+    textarea{
+        width: 50vw;
+        margin-left: 20px;
+    }
+    .app1{
+        margin-left: 15px
+    }
+    
+    table{
+        width: 50vw
+    }
+    
+    }
+
+
+
+
+

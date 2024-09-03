@@ -12,7 +12,6 @@ body {
 /* header styling */
 .header {
   background-color: #327f92;
-  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,13 +19,25 @@ body {
 }
 
 .header .logo {
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
 }
 
 .header .logo img {
-  height: 40px;
-  margin-right: 10px;
+  width: 100px;
+  transition-duration: .5s;
+}
+
+.header .logo img:hover {
+  width: 100px;
+  transform: scale(2);
+  transition-duration: .5s;
+}
+
+.header span{
+  margin-right: auto;
 }
 
 .header .profile {
@@ -34,11 +45,28 @@ body {
   align-items: center;
 }
 
-.header .profile img.profile-pic {
+/*.header .profile img.profile-pic {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   margin-left: 10px;
+}*/
+
+/* this styling will act as a placeholder
+for profile pictures */
+.profile .fa-solid{
+  background: #BBE6E4;
+  padding: 0.5rem;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition-duration: .5s;
+}
+
+.profile .fa-solid:hover{
+  transform: scale(1.5);
+  transition-duration:.5s
 }
 
 /* Navbar styling */
@@ -80,14 +108,16 @@ body {
 /* Sidebar Styling */
 .container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .sidebar {
-  width: 250px;
+  width: 150px;
   background-color: #327f92;
   padding: 20px;
   color: white;
-  height: 700px;
   box-sizing: border-box;
 }
 
@@ -117,19 +147,19 @@ body {
   margin-left: 10px;
 }
 
-/* middle Section */
+/* middle and right Section */
 .content {
-  flex-grow: 1;
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
   background-image: none;
-  height: 700px;
+  width: 80%;
 }
 
 .timeline {
-  width: 60%;
+  width: 50%;
 }
 
 .timeline-search {
@@ -170,7 +200,7 @@ body {
 
 /* Right Sidebar styling*/
 .right-sidebar {
-  width: 35%;
+  width: 40%;
   padding-left: 20px;
 }
 
@@ -200,13 +230,13 @@ body {
 }
 /* footer styling */
 footer{
-  height: 32vh;
+  width: 100%;
   display: flex;
   color: white;
 }
 
 footer .footer-img{
-  width: 30vw;
+  width: 30%;
   background: url("/media/hero.jpg");
   background-position: center;
   background-size: cover;
@@ -238,7 +268,7 @@ footer .footer-img h5{
 }
 
 footer .footer_list-box{
-  width: 70vw;
+  width: 100%;
   background-color: #327f92;
   padding: 1rem 5rem;
 }
