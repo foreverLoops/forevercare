@@ -10,15 +10,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/portal.css" />
-    <script type="module" src="/scripts/portal.js"></script>
+    <script defer type="module" src="/scripts/portal.js"></script>
   </head>
 
   <body>
     <header class="header">
       <div class="logo">
-        <a href="landingPage.html"><img  src="/media/logo.png" alt="Portal Logo" /></a>
+        <a href="/public/landingPage.html"><img  src="/media/logo.png" alt="Portal Logo" /></a>
       </div>
-      <span>Forever Care, Cape Town branch</span>
+      <span>Forever Care</span>
       <div class="profile">
         <span>Name Surname</span>
         <span class="fa-solid fa-user"></span>
@@ -26,30 +26,41 @@
       </div>
     </header>
 
-    <nav class="navbar">
-      <ul>
-        <li>Online Store</li>
-        <li>Send Message</li>
-        <li>Request Appointment</li>
+    <nav class="navbar-container">
+      <ul class="navbar">
+        <a href="#">Online Store</a>
+        <a href="#">Send Message</a>
+        <a href="/public/appointment.html">Request Appointment</a>
       </ul>
     </nav>
+
     <!-- main content -->
     <section class="container">
+      
+      <!-- Hamburger Menu Button -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </label>
+
       <!-- side bar on the left side -->
-      <nav class="sidebar">
-        <ul>
+      <nav class="sidebar-container">
+        <ul class="sidebar">
           <li>Appointments</li>
           <li>Clinical Summary</li>
-          <li>Documents <span class="badge">219</span></li>
+          <li>Documents</li>
           <li>Library</li>
           <li>Medications</li>
-          <li>Messages <span class="badge">1038</span></li>
+          <li>Messages</li>
           <li>Survey</li>
           <li>Timeline</li>
-          <li>Visits <span class="badge">49</span></li>
+          <li>Visits</li>
           <li>Wellness</li>
         </ul>
       </nav>
+
       <!-- middle section -->
       <aside class="content">
         <div class="timeline">
@@ -120,6 +131,7 @@
             </div>
           </div>
         </div>
+
         <!-- sidebar on the right -->
         <aside class="right-sidebar">
           <div class="announcements">
@@ -173,6 +185,7 @@
         </aside>
       </aside>
     </section>
+    
     <!-- Footer -->
     <footer>
       <div class="footer-img">
