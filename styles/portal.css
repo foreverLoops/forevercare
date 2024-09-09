@@ -174,7 +174,7 @@ for profile pictures */
   margin-left: 10px;
 }
 
-/* middle and right Section */
+/* middle and right Section ------------------------------------*/
 .content {
   padding: 20px;
   display: flex;
@@ -361,7 +361,7 @@ footer .footer_list-box{
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 1000px; /* Adjust as per header height */
+    top: 340px; /* Adjust as per header height */
     left: 0;
     width: 100%;
     background-color: #327f92;
@@ -372,11 +372,13 @@ footer .footer_list-box{
   /* Show the sidebar when the checkbox is checked */
   #menu-toggle:checked + .hamburger + .sidebar-container {
     display: flex;
+    opacity: 1;
+    animation-duration: 1s;
   }
 
   /* Hamburger animation */
   #menu-toggle:checked + .hamburger span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
+      transform: rotate(45deg) translate(10px, 5px);
   }
 
   #menu-toggle:checked + .hamburger span:nth-child(2) {
@@ -384,7 +386,7 @@ footer .footer_list-box{
   }
 
   #menu-toggle:checked + .hamburger span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
+      transform: rotate(-45deg) translate(10px, -5px);
   }
 
   .content {
