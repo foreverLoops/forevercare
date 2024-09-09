@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
-  height: 154px;
+  height: 100px;
 }
 
 .header .logo {
@@ -333,6 +333,7 @@ footer .footer_list-box{
   .header {
     flex-direction: column;
     text-align: center;
+    height: 154px;
   }
 
   .navbar-container {
@@ -402,7 +403,9 @@ footer .footer_list-box{
     flex-direction: column;
   }
 
-  .footer-img, 
+  .footer-img {
+    position: absolute;}
+
   .footer_list-box {
     width: 100%;
     padding: 1rem;
