@@ -137,6 +137,7 @@ for profile pictures */
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
+  height: 100vh;
 }
 
 .sidebar-container {
@@ -225,7 +226,7 @@ for profile pictures */
   margin: 5px 0;
 }
 
-/* Right Sidebar styling*/
+/* Right Sidebar styling -----------------------------------------*/
 .right-sidebar {
   width: 40%;
   padding-left: 20px;
@@ -255,7 +256,7 @@ for profile pictures */
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
 }
-/* footer styling */
+/* footer styling ------------------------------------------------*/
 footer{
   width: 100%;
   display: flex;
@@ -328,12 +329,22 @@ footer .footer_list-box{
   justify-content: center;
 }
 
-/* Media Queries for Mobile Devices */
+/* Media Queries for Mobile Devices ---------------------------------*/
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
     text-align: center;
-    height: 154px;
+    height: 160px;
+  }
+
+  .header #title{display: none;}
+
+  .header img{
+    scale: 2;
+  }
+
+  .header img:hover{
+    scale: 1;
   }
 
   .navbar-container {
