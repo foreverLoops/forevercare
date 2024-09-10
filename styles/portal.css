@@ -137,7 +137,6 @@ for profile pictures */
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
-  height: 100vh;
 }
 
 .sidebar-container {
