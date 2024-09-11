@@ -9,8 +9,7 @@
     
 body{
     font-family:Arial, Helvetica, sans-serif;
-    /* background: linear-gradient(to top, white, #42BFDD 50%); */
-    /* background-color: #508692; */
+   
 }
 
 /* HEADER */
@@ -36,7 +35,7 @@ body{
 }
 
 .navbar{
-    /* background-color: #084B83; */
+   
     background:#327f92;
     color: white;
     display: flex;
@@ -54,7 +53,7 @@ body{
     background: linear-gradient(to left, #327f92 50%, #BBE6E4 50%) right;
     background-size: 220%;
     transition: .5s ease-out;
-    /* border: 1px solid #42BFDD; */
+    
 }
 
 .navbar a{
@@ -62,7 +61,6 @@ body{
     color: white;
 }
 .navbar li:hover{
-    /* background: #42BFDD; */
     padding: 0.5rem;
     border-radius: 0.3rem;
     background-position: left;
@@ -148,19 +146,27 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .aboutUsDetails{
-    margin-left: 8rem;
-   display: flex;
+    /* margin-left: 5rem; */
+    display: flex;
     background-image: url("/media/book.jpg");
-    background-size: cover;
-    background-size: contain;
+    /* background-size: cover; */
+    /* background-size: contain; */
     background-position: right;
     align-items: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     height: 50vh;
-    background-size: auto;
+    border-top:2px solid #327f92 ;
+    border-bottom: 2px solid #327f92 ; 
+    background-color: #BBE6E4;
     
    
 }
+
+.ourStoryBackground{
+     background-color: white;
+     padding:30px 0;
+}
+
 .aboutUsDetails img{
     width: 320px;
     height: 300px;
@@ -169,15 +175,11 @@ body{
     width: 750px;
     height: 210px;
     padding: 30px;
-    background-color:white;
-    /* background-color: rgb(233, 244, 245); */
+    background-color:transparent;
     font-style: italic;
     font-size: large;
     padding-top: 0%;
-    
-
-    
-    
+    /* border: 1px solid #084B83; */
     
     
 }
@@ -187,6 +189,7 @@ body{
     font-weight: bold;
     color: #084B83;
     font-size: 3em;
+  
 }
 .line{
     width: 300px;
@@ -199,6 +202,7 @@ body{
 .our-story{
     
 padding: 50px;
+background-color:rgba(224, 255, 255, 0);
 
 
 
@@ -211,7 +215,7 @@ padding: 50px;
     font-size: 3em;
     font-style: italic;
     margin-left: 30rem;
-    /* font-family: serif; */
+   
     
     
 }
@@ -225,11 +229,14 @@ margin-left: 25rem;
 }
 .story{
 margin-left: 15rem;
-width: 950px;
-height: 120px;
+width: 960px;
+height: 200px;
 font-style: italic;
-background-color:whitesmoke;
-color: #084B83;
+
+color: #ffffff;
+padding:3rem;
+border-radius: 30px;
+background-color: #327f92;
 
 font-weight: bold;
 
@@ -257,8 +264,9 @@ width: 1000px;
 .our-doctors {
     padding: 20px;
     border-radius: 10px;
-    background-color:#BBE6E4;
+    background-color:#327f92;
    font-size: medium;
+   color:white;
 }
 
 .heading-center{
@@ -285,16 +293,18 @@ width: 1000px;
     font-weight: bold;
     font-size: 15px;
     
+    
 }
  
 .doctor img {
     width: 200px;
     height: 300px;
-    border-radius: 20px;
+    border-radius: 50px;
     margin-bottom: 10px;
     object-fit: cover;
     padding: 20px;
     box-sizing: border-box;
+    
     
 
 }
@@ -304,19 +314,22 @@ width: 1000px;
 /* Development Team Section */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: lightcyan;
     margin: 0;
-    padding: 0;
+    /* padding: 50px 0; */
+    
+
 }
  
 .team-section {
     text-align: center;
-    padding-bottom:1.5rem;
+    padding:50px 0;
+    
 }
 .profileImage{
     width: 150px;
     height: 150px;
-    /* background-color: white; */
+    
     border-radius: 100%;
 }
 
@@ -326,8 +339,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    /* width: 300px; */
-    /* height: 300px; */
+    
     
 }
  
@@ -346,7 +358,7 @@ body {
     margin: 0 auto 10px;
     object-fit: cover;
     justify-content: center; 
-    border:2px solid #000;
+    border:3px solid #327f92;
     
 
     
@@ -383,16 +395,20 @@ body {
     
 }
  
-/* Footer */
+/* FOOTER */
 footer{
-    /* background-color: #084B83; */
-    height: 32vh;
+    background-color: #327f92;
     display: flex;
+    flex-direction: row-reverse;
     color: white;
+    /* margin: 0; */
+    justify-content: space-evenly;
+    /* padding: 0; */
 }
 footer .footer-img{
-    width: 30vw;
-    background: url("/media/hero.jpg");
+    width: 19.5vw;
+    background: url("../media/forevercare-logo.png");
+   
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -400,13 +416,7 @@ footer .footer-img{
     justify-content: center;
     align-items: baseline;
 }
-footer .footer-img h5{
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-    background-color: rgb(255, 255, 255, 0.8);
-    color: #2c2c2c;
-    border-radius: 5px;
-}
+
 .footer-socials{
     display: flex;
     justify-content: center;
@@ -421,8 +431,9 @@ footer .footer-img h5{
 footer .footer_list-box{
     width: 70vw;
     background-color: #327f92;
-    /* background: linear-gradient(to top, #327f92 , #084B83 50% ); */
-
+    /* margin:0 ; */
+    /* display:block; */
+   
     padding: 1rem 5rem;
 }
 .footer_list-box h5{
@@ -436,8 +447,13 @@ footer .footer_list-box{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
-.footer_list li{
+.footer_list dt{
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.footer_list dl{
     list-style: none;
     line-height: 1.4rem;
 }
@@ -449,3 +465,84 @@ footer .footer_list-box{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width:1024px) {
+   
+     .message{
+        margin-left:200px;
+        
+        } 
+
+    .border{
+        border-top: 1px solid #000;
+        width:400px;
+        margin: 0 auto;
+    }
+
+    .our-story h4 {
+           
+            margin-left: 30vw;
+        }
+
+    .line2{
+            background-color: #00000000;
+            margin-left: 30vw;
+            padding-bottom: 20px;
+            margin-bottom: 80px;
+            border-top: 1px solid #000;
+        
+        }
+    .our-story{
+        padding:20px
+    }
+   
+
+    .story{
+        padding: 20px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .aboutUsDetails {
+        margin-left:0px ;
+    }
+    .aboutUsInfo{
+        padding-right: 0px;
+        width: 500px;
+        height: 300px;
+
+    }
+
+    .doctor-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width:768px) {
+
+    .story{
+    margin-left: 35px;
+    width: 700px;
+    height: 200px;
+    }
+    .message{
+    
+    margin-left: 80px;
+
+    }
+    .our-story h4 {
+        
+        margin-left: 20vw;
+
+}
+    .user-box i{
+        background: #BBE6E4;
+        padding: 0.8rem;
+        border-radius: 100%;
+        cursor: pointer;
+}
+}
+
