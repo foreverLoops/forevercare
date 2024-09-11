@@ -1,21 +1,24 @@
-/* General Styling */
+/* General Styling ----------------------------------------*/
 *{
   margin:0;
   padding:0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
+  display: grid;
 }
 
-/* header styling */
+/* header styling ------------------------------------------*/
 .header {
   background-color: #327f92;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
+  height: 100px;
 }
 
 .header .logo {
@@ -69,8 +72,9 @@ for profile pictures */
   transition-duration:.5s
 }
 
-/* Navbar styling */
-.navbar {
+/* Navbar styling -------------------------------------------*/
+
+.navbar-container {
   background-color: #327f92;
   padding: 10px;
   color: white;
@@ -78,7 +82,7 @@ for profile pictures */
   justify-content: center;
 }
 
-.navbar ul {
+.navbar-container ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -86,26 +90,48 @@ for profile pictures */
   justify-content: center;
 }
 
-.navbar ul li {
+.navbar-container ul a{
+  text-decoration: none;
+  color: white;
   margin: 0 20px;
   padding: 0.5rem;
   border-radius: 0.3rem;
   cursor: pointer;
 }
 
-.navbar li:nth-child(-n+5){
+.navbar-container ul a:nth-child(-n+5){
   background: linear-gradient(to left, #327f92 50%, #BBE6E4 50%) right;
   background-size: 220%;
   transition: .5s ease-out;
 }
 
-.navbar li:hover{
+.navbar-container ul a:hover{
     padding: 0.5rem;
     border-radius: 0.3rem;
     background-position: left;
 }
 
-/* Sidebar Styling */
+/* Sidebar Styling -------------------------------------------*/
+
+#menu-toggle {display: none;}
+
+.hamburger{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #327f92;
+  align-items: center;
+}
+
+.hamburger span {
+  width: 5%;
+  height: 3px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -113,7 +139,7 @@ for profile pictures */
   text-align: center;
 }
 
-.sidebar {
+.sidebar-container {
   width: 150px;
   background-color: #327f92;
   padding: 20px;
@@ -121,33 +147,34 @@ for profile pictures */
   box-sizing: border-box;
 }
 
-.sidebar ul {
+.sidebar-container ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebar ul li {
+.sidebar-container ul li {
   padding: 10px 0;
   cursor: pointer;
   border-bottom: 1px solid #3e5572;
+  border-radius: .3rem
 }
 
-.sidebar ul li:hover {
+.sidebar-container ul li:hover {
   color: #3e5572;
   background-color: #BBE6E4;
   padding-left: 10px;
   transition: all 0.3s;
 }
 
-.sidebar .badge {
+.sidebar-container .badge {
   background-color: #42bfdd;
   padding: 2px 5px;
   border-radius: 12px;
   margin-left: 10px;
 }
 
-/* middle and right Section */
+/* middle and right Section ------------------------------------*/
 .content {
   padding: 20px;
   display: flex;
@@ -198,7 +225,7 @@ for profile pictures */
   margin: 5px 0;
 }
 
-/* Right Sidebar styling*/
+/* Right Sidebar styling -----------------------------------------*/
 .right-sidebar {
   width: 40%;
   padding-left: 20px;
@@ -228,7 +255,7 @@ for profile pictures */
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
 }
-/* footer styling */
+/* footer styling ------------------------------------------------*/
 footer{
   width: 100%;
   display: flex;
@@ -299,4 +326,98 @@ footer .footer_list-box{
   font-size: 0.8rem;
   display: flex;
   justify-content: center;
+}
+
+/* Media Queries for Mobile Devices ---------------------------------*/
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    height: 160px;
+  }
+
+  .header #title{display: none;}
+
+  .header img{
+    scale: 2;
+  }
+
+  .header img:hover{
+    scale: 1;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .navbar-container ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-container ul a {
+    margin: 5px 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .hamburger{
+    display: flex;
+  }
+
+  .sidebar-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 340px; /* Adjust as per header height */
+    left: 0;
+    width: 100%;
+    background-color: #327f92;
+    padding: 20px 0;
+    z-index: 1000; /* Ensure it appears on top */
+  }
+
+  /* Show the sidebar when the checkbox is checked */
+  #menu-toggle:checked + .hamburger + .sidebar-container {
+    display: flex;
+    opacity: 1;
+    animation-duration: 1s;
+  }
+
+  /* Hamburger animation */
+  #menu-toggle:checked + .hamburger span:nth-child(1) {
+      transform: rotate(45deg) translate(10px, 5px);
+  }
+
+  #menu-toggle:checked + .hamburger span:nth-child(2) {
+      opacity: 0;
+  }
+
+  #menu-toggle:checked + .hamburger span:nth-child(3) {
+      transform: rotate(-45deg) translate(10px, -5px);
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .timeline, 
+  .right-sidebar {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-img {
+    position: absolute;}
+
+  .footer_list-box {
+    width: 100%;
+    padding: 1rem;
+  }
 }
