@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="../styles/landingPage.css">
+    <script defer type="module" src="../scripts/landingPage.js"></script>
     <script src="https://kit.fontawesome.com/68ac156ff5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav class="small-navbar">
+        <nav class="small-navbar" id="navbar">
             <ul>
                 <li><i class="fa-solid fa-phone"></i>021 7402 5314</li>
                 <li><i class="fa-solid fa-location-dot"></i>Saltriver, Cape Town, South Africa</li>
@@ -127,10 +128,11 @@
                 <p>Diagnosis and treatment of heart and vascular conditions.</p>
             </div>
         </div>
-        <div class="see_more-box">
+        <!-- <div class="see_more-box">
             <span>see more<i class="fa-solid fa-arrow-right"></i></span>
 
-        </div>
+        </div> -->
+        <div class="line"></div>
 
         <div class="services_outer-box" id="services">
             <div class="services-box ">
@@ -166,9 +168,9 @@
                 <p>Immediate treatment for urgent and life-threatening conditions.</p>
             </div>
         </div>
-        <div class="see_more-box">
+        <!-- <div class="see_more-box">
             <span>see more<i class="fa-solid fa-arrow-right"></i></span>
-        </div>
+        </div> -->
 
     </section>
 
@@ -187,21 +189,44 @@
         <picture class="carousel-container">
             <div class="carousel-box">
                 <div class="gallery">
-                    <div class="gallery-info">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="gallery-info first">
                         <h2>Book An Appointment</h2>
                         <img src="../media/appointment.png" alt="">
+                        <span>1</span>
                     </div>
                     <div class="gallery-info">
                         <h2>Conduct Checkup</h2>
                         <img src="../media/check-up.png" alt="">
+                        <span>2</span>
                     </div>
                     <div class="gallery-info">
                         <h2>Perform Treatment</h2>
                         <img src="../media/first-aid-kit.png" alt="">
+                        <span>3</span>
                     </div>
                     <div class="gallery-info">
                         <h2>At No Cost</h2>
                         <img src="../media/tag.png" alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
                     </div>
                 </div>
             </div>
@@ -257,6 +282,7 @@
 
             </div>
             <div class="form-box">
+                <h1>Send Us A Message</h1>
                 <form action="">
                     <input type="text" placeholder="Name">
                     <input type="tel" placeholder="Phone Number">
@@ -288,6 +314,11 @@
         </div></a>
     </section> -->
 
+    <a href="#navbar"><span class="toTop">
+            <i class="fa-solid fa-caret-up"></i>
+        </span>
+        </a>
+
     <footer>
         <div class="footer-img">
             <!-- <img src="./media/hero.jpg" alt="footer image" width="200px"> -->
@@ -310,6 +341,7 @@
                     <dd>Contact Us</dd>
                 </dl>
                 <dl>
+                    <dt>Other Links</dt>
                     <dd>FAQs</dd>
                     <dd>Privacy Policy</dd>
                     <dd>Terms & Conditions</dd>
@@ -318,7 +350,7 @@
                 <dl>
                     <dt>Contact Info</dt>
                     <dd><i class="fa-solid fa-phone"></i>021 7402 5314</dd>
-                    <dd><i class="fa-solid fa-location-dot"></i>Saltriver, Cape Town</dd>
+                    <dd><a href=""></a><i class="fa-solid fa-location-dot"></i>Saltriver, Cape Town</dd>
                     <dd><i class="fa-solid fa-envelope"></i>forevercare@gmail.com</dd>
                     <dd><i class="fa-solid fa-clock"></i>24hr open</dd>
                 </dl>

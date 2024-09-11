@@ -205,6 +205,7 @@ aside a, .about-text a{
     display: flex;
     flex-direction: row;
     background-color: #327f92;
+    padding: 3rem 0;
 }
 .instruction-info{
     width: 50vw;
@@ -238,26 +239,35 @@ aside a, .about-text a{
     align-items: center;
     justify-content: center;
 }
-.gallery{
+/* added */
+.carousel-box{
     width: 360px;
+    height: 360px;
+    overflow: hidden;  
+}
+/* edited */
+.gallery{
+    width: 506%;
     height: 360px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
-.gallery div{
+/* added */
+.gallery input{
+    display: none;
+}
+
+.gallery .gallery-info{
     width: 350px;
     height: 350px;
     background-color: #BBE6E4;
     border-radius: 10px;
     margin-right: 1.1rem;
-    flex: none;
+    /* flex: none; */
 }
-.gallery::-webkit-scrollbar{
-     /* takes scroll bar away*/
-    display: none;
-}
+
 .gallery img{
     width: 130px;
     margin-top: 2rem;
@@ -267,6 +277,84 @@ aside a, .about-text a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    /* width: 20%; */
+    transition: 2s;
+}
+
+/* manual navigation */
+.navigation-manual{
+    position: absolute;
+    width: 360px;
+    margin-top: 38vh;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #327f92;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+
+}
+.manual-btn:hover{
+    background: #327f92;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+} 
+#radio2:checked ~ .first{
+    margin-left: -360px;
+}
+#radio3:checked ~ .first{
+    margin-left: -730px;
+}
+#radio4:checked ~ .first{
+    margin-left: -1100px;
+}
+/* automatic navigation */
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 360px;
+    margin-top: 38vh;
+    justify-content: center;
+}
+.navigation-auto div{
+    border: 2px solid #327f92;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #327f92;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #327f92;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #327f92;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #327f92;
+}
+
+.gallery-info span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.8rem;
+    background: white;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1.2rem;
 }
 /* FAQ */
 .FAQ-section h1{
@@ -298,12 +386,26 @@ aside a, .about-text a{
 .FAQ-box span{
     margin-right: 1rem;
     background-color: #BBE6E4;
-    padding: 1rem;
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.FAQ-box p{
+    padding: 0.5rem;
+}
+
 .FAQ-section{
 margin: 4rem;
 }
 
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #327f92;
+    margin-bottom: 2rem;
+}
 /* services */
 .heading-center{
     display: flex;
@@ -328,6 +430,10 @@ margin: 4rem;
     color: #d8d6d6;
 }
 
+.services-box i, .departments-box i{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
 .services-container{
     border-top: 3px solid #327f92;
     /* height: 50vh; */
@@ -524,7 +630,10 @@ margin: 4rem;
     flex-direction: column;
     border-top-right-radius: 10px;
 }
-
+.form-box h1{
+    color: white;
+    margin: 1rem 0;
+}
 form{
     display: flex;
     flex-direction: column;
@@ -557,7 +666,24 @@ form button{
     margin: 0.5rem 0;
 }
 
-
+.toTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.2rem;
+    z-index: 1;
+    cursor: pointer;
+    color: #2c2c2c;
+    background-color: #BBE6E4;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    box-shadow: #00000034 0 5px 5px 0, #0a0a0a44 0 17px 50px 0;
+}
+.toTop{
+    font-size: 1.3rem;
+}
 
 
 /* FOOTER */
@@ -632,7 +758,15 @@ footer .footer_list-box{
     justify-content: center;
 }
 
-
+@media screen and (max-width:1024px){
+    .hero article {
+        width: 35vw;
+    }
+    .gallery .gallery-info {
+        width: 350px;
+        height: 300px;
+    }
+}
 
 @media screen and (max-width:850px){
     .hero article {
@@ -668,24 +802,24 @@ footer .footer_list-box{
     .instruction-info h2 {
         font-size: 1.6rem;
     }
-    .gallery div {
+    /* .gallery .gallery-info {
         width: 270px;
         height: 270px;
-    }
-    .gallery-info h2{
+    } */
+    /* .gallery-info h2{
         font-size: 1rem;
-    }
-    .gallery img {
+    } */
+    /* .gallery img {
         width: 100px;
-    }
-    .gallery {
+    } */
+    /* .gallery {
         width: 270px;
         height: 270px;
         display: flex;
         align-items: center;
         flex-direction: row;
         overflow: scroll;
-    }
+    } */
     .instruction-info p {
         width: 100%;
         font-size: 1rem;
