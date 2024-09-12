@@ -15,7 +15,7 @@
                </div>
                <div class="intro">
                   <p>New Patient Registration</p>
-                  <p>Welcome Please fill in the Following Form</p>
+                  <p>Welcome Please Fill In The Following Form</p>
                </div>
                <h2>Registration</h2>
                <div class="dateregistration">
@@ -25,6 +25,7 @@
                      </label>
                   </form>
                </div>
+              
          </section>
          <hr>
          <section>
@@ -60,13 +61,22 @@
                   <input type="day" id="day" name="day" placeholder="Day">
                   <input type="year" id="year" name="year" placeholder="Year">
                </form>
+
                <form class="patient_name" action="">
                   <input type="text" id="idnumber" name="idnumber" placeholder="ID Number/Passport">
-                  <input type="tel" id="phone" name="phone" placeholder="076-870-2153">
+                  <input type="tel" id="phone" name="phone" placeholder="Phone number">
+               </form>
+
+               <form class="patient_name" action="">
+                  <input type="email" id="email" name="email" placeholder="Email Address" required>
+                  
                </form>
                <form class="patient_name" action="">
-                  <input type="email" id="email" name="email" placeholder="Email">
+                  
+                  <input type="password" id="password1" pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,7}" maxlength="7" name="Password" placeholder="Enter password" title="Password must be up to 7 characters, and include at least one letter, one number, and one special character." required>
+                  <input type="password" id="password2" pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,7}" maxlength="7" name="confirm_password" placeholder="Confirm Password" title="Please re-enter the same password." required>
                </form>
+            
                <h3>Address</h3>
                <form class="patient_name" action="">
                   <input type="text" id="address" name="address" placeholder="Street Address Line 1">
@@ -88,7 +98,7 @@
                            <option value="">Gauteng</option>
                            <option value="">Mpumalanga</option>
                            <option value="">Limpopo</option>
-                           <option value="">North West Province</option>
+                           <option value="">North West</option>
                      </select>
                   </form>
                   <form class="patient_name" action="">
@@ -96,12 +106,11 @@
                   </form>
                   <form class="patient_name" action="">
                      <select name="status" id="status">
-                           <option value="" disabled selected hidden>Maritial Status</option>
+                           <option value="" disabled selected hidden>Marital Status</option>
                            <option value="">Single</option>
                            <option value="">Married</option>
                            <option value="">Divorced</option>
-                           <option value="">Legally Separeted</option>
-                           <option value="">Widowe</option>
+                           <option value="">Widow</option>
                      </select>
 
                   </form>
@@ -152,7 +161,7 @@
          <input type="radio" id="yes" name="under18" value="yes">
          <label for="yes">No</label>
          <hr>
-         <h2>Insurance Information</h2>
+         <h2>Medical Insurance</h2>
          <form class="patient_name" action="">
                <input type="text" id="" name="" placeholder="Insurance">
                <input type="text" id="" name="" placeholder="Insurance ID">
@@ -170,11 +179,9 @@
                <input type="tel" id="" name="" placeholder="Contact Number">
          </form>
          <hr>
-         <span class="submit_button">
-               <form action="submit">
-                  <input type="submit" id="submit" name="submit">
-               </form>
-         </span>
+         <button type="submit">
+            <a href="/public/login.html" class="sign-up-link">Submit</a> 
+        </button>
       </main>
    </body>
 
