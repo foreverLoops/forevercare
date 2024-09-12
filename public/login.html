@@ -7,36 +7,26 @@
     <title>LogIn_Form</title>
 </head>
 <body>
+    <div class="main-div">
     <div class="main-logo">
         <div class="container">
             <div>
                 <h1>WELCOME</h1>
-    
             </div>
-            
-            <br>
-            <form class="log_in" action="">
-                <label for="id">Email
-                    <input type="email" id="email" name="Email" placeholder="iyazi@gmail.com" required >
-                </label>
-            </form>
             <br>
             <form class="log_in" action="">
                 <label for="id">ID Number/Card No
-                    <input type="number" id="number" name="id" placeholder="1245788520"  required >
+                    <input type="number" id="number" name="id" placeholder="**********"  required >
                 </label>
             </form>
             <br>
             <form class="log_in" action="">
                 <label for="password">Password
-                    <input type="password" id="password" name="password" placeholder="Aphiwe@2002" required >
+                    <input type="password" id="password" pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,7}" maxlength="7" name="password" title="Password must be up to 7 characters, and include at least one letter, one number, and one special character." placeholder="*******" required >
                 </label>
             </form>
-            <p class="password"><a href="http://www.example.com/forgot password"> Forgot Password</a> </p> 
             <br>
-            <button>
-                <a href="http://sign in" class="sign-up-link">Sign In</a> 
-            </button>
+            <p class="password"><a href="/public/forgotpassword.html"> Forgot Password</a> </p> 
             <br>
             <form class="log_in" action="">
                 <input type="checkbox" >
@@ -44,10 +34,14 @@
                 I agree with Forever's care Terms of Service, Privacy Policy and default Notification Settings
                 </label>
             </form>
+            <br>
+            <button type="submit">
+                <a href="http://sign in" class="sign-up-link">Sign In</a> 
+            </button>
+            <br>
             <p>Do not have account?
-                <span><a href="http://www.example.com/signup" class="sign-up-link">Sign Up</a></span>
+                <span><a href="/public/signup.html">Sign Up</a></span>
             </p>
-        
         </div>
     </div>
     <div class="main-logo" id="main-logo">
@@ -55,5 +49,6 @@
 
         </div>
     </div>
+</div>
 </body>
 </html>

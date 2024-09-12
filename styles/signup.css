@@ -97,6 +97,21 @@
         justify-content: space-between;
         
     }
+    hr{
+        
+            width: 100%;
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, hsla(181, 24%, 65%, 0.486), rgba(6, 34, 33, 0.486));
+            margin: 20px auto;
+    
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button
+    {
+      -webkit-appearance: none;
+    }
 
 
 
