@@ -15,7 +15,7 @@ body{
   /* border-radius: 5px; */
   border: 4px solid black;
   border-image:linear-gradient( to top, hsla(184, 55%, 88%, 0.486), rgba(18, 202, 202, 0.493) )1; 
-
+  box-shadow: 0 10px 20px rgba(2, 2, 2, 0.521);
 }
 .main-logo{
   padding: 12px;
