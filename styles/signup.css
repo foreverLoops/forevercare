@@ -107,6 +107,13 @@
     
     }
 
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button
+    {
+      -webkit-appearance: none;
+    }
+
+
 
     .patient_name input[type=text],.patient_name input[type=number], .patient_name input[type=tel],  .patient_name input[type=year], .patient_name input[type=day], .patient_name input[type=email],.patient_name select{
         width: 23vw;
