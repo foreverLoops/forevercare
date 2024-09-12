@@ -12,15 +12,7 @@
         <div class="container">
             <div>
                 <h1>WELCOME</h1>
-    
             </div>
-            
-            <br>
-            <form class="log_in" action="">
-                <label for="id">Email
-                    <input type="email" id="email" name="Email" placeholder="example@gmail.com" required >
-                </label>
-            </form>
             <br>
             <form class="log_in" action="">
                 <label for="id">ID Number/Card No
@@ -30,7 +22,7 @@
             <br>
             <form class="log_in" action="">
                 <label for="password">Password
-                    <input type="password" id="password" name="password" placeholder="*******" required >
+                    <input type="password" id="password" pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,7}" maxlength="7" name="password" title="Password must be up to 7 characters, and include at least one letter, one number, and one special character." placeholder="*******" required >
                 </label>
             </form>
             <br>
