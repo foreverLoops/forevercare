@@ -1,6 +1,7 @@
 *{
     margin: 0 ;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     font-family:Arial, Helvetica, sans-serif;
@@ -8,6 +9,9 @@ body{
     /* background-color: #508692; */
     margin: 0;
     padding: 0;
+}
+a{
+    text-decoration: none;
 }
 
 /* HEADER */
@@ -760,6 +764,9 @@ footer .footer_list-box{
     list-style: none;
     line-height: 1.4rem;
 }
+.footer_list dl a{
+    color: white;
+}
 .footer-text {
     border-top: 1px solid white;
     padding-top: 10px;
@@ -1119,7 +1126,7 @@ footer .footer_list-box{
 }
 @media screen and (max-width: 375px) {
     .about, aside{
-        height: 70vh;
+        height: 55vh;
     }
     .about {
         z-index: 1;
@@ -1127,6 +1134,9 @@ footer .footer_list-box{
     .about .about-text {
         font-size: 1rem;
         width: 70vw;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
     }
     .instruction-info {
         margin-left: 10px;
@@ -1161,5 +1171,8 @@ footer .footer_list-box{
     .form-box h1 {
         margin:0.49rem 0;
         font-size: 1rem;
+    }
+    .map-box {
+        height: 26.15rem;
     }
 }
