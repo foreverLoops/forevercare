@@ -18,6 +18,7 @@
                   <p>Welcome Please Fill In The Following Form</p>
                </div>
                <h2>Registration</h2>
+               
                <div class="dateregistration">
                   <form action="submitDate.html">
                      <label for="Date">
@@ -35,15 +36,15 @@
                   <input type="text" name="lastName" id="lastName" placeholder="Last Name">
                </form>
                <form class="patient_name" action="">
-                  <select class="patient_name" name="gender" id="gender" type="text">
+                  <select class="patient_name" name="gender" id="gender" type="text" required>
                      <option value="" disabled selected hidden>Please Select Gender</option>
                      <option value="Male">Male</option>
                      <option value="Female">Female</option>
                   </select>
-                  <input type="number" name="age" id="age" placeholder="Age">
+                  <input type="number" name="age" id="age" placeholder="Age" required>
                </form>
                <form class="patient_name" action="">
-                  <select type="months" name="months" id="months">
+                  <select type="months" name="months" id="months" required>
                      <option value="" disabled selected hidden>Select Month</option>
                      <option value="January">January</option>
                      <option value="Febuary">February</option>
@@ -58,13 +59,13 @@
                      <option value="November">November</option>
                      <option value="December">December</option>
                   </select>
-                  <input type="day" id="day" name="day" placeholder="Day">
-                  <input type="year" id="year" name="year" placeholder="Year">
+                  <input type="day" id="day" name="day" placeholder="Day" required>
+                  <input type="year" id="year" name="year" placeholder="Year" required>
                </form>
 
                <form class="patient_name" action="">
-                  <input type="text" id="idnumber" name="idnumber" placeholder="ID Number/Passport">
-                  <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                  <input type="text" id="idnumber" name="idnumber" placeholder="ID Number/Passport" required>
+                  <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
                </form>
 
                <form class="patient_name" action="">
@@ -79,15 +80,15 @@
             
                <h3>Address</h3>
                <form class="patient_name" action="">
-                  <input type="text" id="address" name="address" placeholder="Street Address Line 1">
-                  <input type="text" id="address" name="address" placeholder="Street Address Line 2">
+                  <input type="text" id="address" name="address" placeholder="Street Address Line 1" required>
+                  <input type="text" id="address" name="address" placeholder="Street Address Line 2" required>
                </form>
                <form class="patient_name" action="">
                   <form class="" action="">
 
                   </form>
                   <form class="patient_name" action="">
-                     <input type="text" id="city" name="city" placeholder="City">
+                     <input type="text" id="city" name="city" placeholder="City" required>
                      <select name="" id="">
                            <option value="" disabled selected hidden>Select Province</option>
                            <option value="">Western Cape</option>
@@ -102,10 +103,10 @@
                      </select>
                   </form>
                   <form class="patient_name" action="">
-                     <input type="text" id="" name="" placeholder="Postal/Zip Code">
+                     <input type="text" id="" name="" placeholder="Postal/Zip Code" required>
                   </form>
                   <form class="patient_name" action="">
-                     <select name="status" id="status">
+                     <select name="status" id="status" required>
                            <option value="" disabled selected hidden>Marital Status</option>
                            <option value="">Single</option>
                            <option value="">Married</option>
@@ -115,10 +116,10 @@
 
                   </form>
                   <h3>Is The Patient Younger Than 18?</h3>
-                  <input type="radio" id="yes" name="under18" value="yes">
-                  <label for="yes">Yes</label>
-                  <input type="radio" id="no" name="under18" value="no">
-                  <label for="no">No</label>
+                  <input type="radio" id="yes" name="under18" value="yes" required>
+                  <label for="yes" class="yes">Yes</label>
+                  <input type="radio" id="no" name="under18" value="no" required>
+                  <label for="no" class="no">No</label>
 
                   <form class="patient_form" action="getfrom.html">
                      <input type="text" id="parent/gardian" name="parent/gardian" placeholder="Parent Name/Gardian">
@@ -157,9 +158,9 @@
          </section>
          <h3>Taking any Medications currently</h3>
          <input type="radio" id="yes" name="under18" value="yes">
-         <label for="yes">Yes</label>
-         <input type="radio" id="yes" name="under18" value="yes">
-         <label for="yes">No</label>
+         <label for="yes" class="yes">Yes</label>
+         <input type="radio" id="no" name="under18" value="no">
+         <label for="no" class="no">No</label>
          <hr>
          <h2>Medical Insurance</h2>
          <form class="patient_name" action="">

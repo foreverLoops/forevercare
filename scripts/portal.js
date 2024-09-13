@@ -1,15 +1,13 @@
-import {clinicalSummary,documents,medications,timeline } from "/scripts/portalData.js";
+import { clinicalSummary, documents, feedback, medications, notice, timeline } from "/scripts/portalData.js";
 
 console.log(timeline)
-/*
-TODO
-event listeners in navbar and sidebar
-use DOM manipulation to render content in and out
-*/
+
 
 let rightSidebar = document.querySelector(".sidebar");
 let rightSidebarLinks = rightSidebar.querySelectorAll("li");
 let display = document.querySelector(".display");
+
+display.innerHTML = notice;
 
 rightSidebarLinks[0].addEventListener("click",function() {
     display.innerHTML = appointments;
@@ -36,7 +34,7 @@ rightSidebarLinks[5].addEventListener("click",function() {
 });
 
 rightSidebarLinks[6].addEventListener("click",function() {
-    display.innerHTML = survey;
+    display.innerHTML = feedback;
 });
 
 rightSidebarLinks[7].addEventListener("click",function() {
