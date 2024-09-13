@@ -137,30 +137,31 @@ for profile pictures */
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
+  width: 100%;
 }
 
 .sidebar-container {
-  width: 150px;
+  width: 20%;
   background-color: #327f92;
   padding: 20px;
   color: white;
   box-sizing: border-box;
 }
 
-.sidebar-container ul {
+.sidebar-container .sidebar {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebar-container ul li {
+.sidebar-container .sidebar li {
   padding: 10px 0;
   cursor: pointer;
   border-bottom: 1px solid #3e5572;
   border-radius: .3rem
 }
 
-.sidebar-container ul li:hover {
+.sidebar-container .sidebar li:hover {
   color: #3e5572;
   background-color: #BBE6E4;
   padding-left: 10px;
@@ -179,21 +180,22 @@ for profile pictures */
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   box-sizing: border-box;
   background-image: none;
   width: 80%;
 }
 
-.timeline {
-  width: 50%;
+.display {
+  width: 80%;
+  height: 1000px;
 }
 
-.timeline-search {
+.search-bar {
   margin-bottom: 20px;
 }
 
-.timeline-search input[type="text"] {
+.search-bar input[type="text"] {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
@@ -201,13 +203,13 @@ for profile pictures */
   box-sizing: border-box;
 }
 
-.timeline h3 {
+.display h3 {
   color: #42bfdd;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
-.timeline .event {
+.display .event {
   background-color: #ffffff;
   padding: 10px;
   margin-bottom: 10px;
@@ -215,19 +217,19 @@ for profile pictures */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.timeline .event-date {
+.display .event-date {
   font-size: 14px;
   color: #777;
   margin-bottom: 5px;
 }
 
-.timeline .event-details p {
+.display .event-details p {
   margin: 5px 0;
 }
 
 /* Right Sidebar styling -----------------------------------------*/
 .right-sidebar {
-  width: 40%;
+  width: 50%;
   padding-left: 20px;
 }
 
@@ -404,7 +406,7 @@ footer .footer_list-box{
     width: 100%;
   }
 
-  .timeline, 
+  .display, 
   .right-sidebar {
     width: 100%;
   }

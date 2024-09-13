@@ -1,22 +1,52 @@
+import {clinicalSummary,documents,medications,timeline } from "/scripts/portalData.js";
+
+console.log(timeline)
 /*
 TODO
 event listeners in navbar and sidebar
 use DOM manipulation to render content in and out
 */
 
-let navBar = document.querySelector(".navbar");
-let navLink = navBar.querySelectorAll("a");
 let rightSidebar = document.querySelector(".sidebar");
 let rightSidebarLinks = rightSidebar.querySelectorAll("li");
-let mainContent = document.querySelector(".content");
+let display = document.querySelector(".display");
 
-/*
-console.log(navLink)
-navLink.forEach(navLink => {
-    navLink.style.opacity = ".1"
+rightSidebarLinks[0].addEventListener("click",function() {
+    display.innerHTML = appointments;
 });
-*/
 
-//navBar.remove();
-//rightSidebar.remove();
-//mainContent.remove();
+rightSidebarLinks[1].addEventListener("click",function() {
+    display.innerHTML = clinicalSummary;
+});
+
+rightSidebarLinks[2].addEventListener("click",function() {
+    display.innerHTML = documents;
+});
+
+rightSidebarLinks[3].addEventListener("click",function() {
+    display.innerHTML = library;
+});
+
+rightSidebarLinks[4].addEventListener("click",function() {
+    display.innerHTML = medications;
+});
+
+rightSidebarLinks[5].addEventListener("click",function() {
+    display.innerHTML = messages;
+});
+
+rightSidebarLinks[6].addEventListener("click",function() {
+    display.innerHTML = survey;
+});
+
+rightSidebarLinks[7].addEventListener("click",function() {
+    display.innerHTML = timeline;
+});
+
+rightSidebarLinks[8].addEventListener("click",function() {
+    display.innerHTML = visits;
+});
+
+rightSidebarLinks[9].addEventListener("click",function() {
+    display.innerHTML = wellness;
+});
