@@ -89,9 +89,6 @@ body{
     cursor: pointer;
 }
 
- 
-
- 
 .intro-section {
     background: url("") no-repeat center center/cover;
     height: 300px;
@@ -146,11 +143,8 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .aboutUsDetails{
-    /* margin-left: 5rem; */
     display: flex;
     background-image: url("/media/book.jpg");
-    /* background-size: cover; */
-    /* background-size: contain; */
     background-position: right;
     align-items: center;
     background-repeat: no-repeat;
@@ -267,6 +261,8 @@ width: 1000px;
     background-color:#327f92;
    font-size: medium;
    color:white;
+   
+  
 }
 
 .heading-center{
@@ -401,10 +397,9 @@ footer{
     display: flex;
     flex-direction: row-reverse;
     color: white;
-    /* margin: 0; */
     justify-content: space-evenly;
-    /* padding: 0; */
 }
+    
 footer .footer-img{
     width: 19.5vw;
     background: url("../media/forevercare-logo.png");
@@ -431,8 +426,7 @@ footer .footer-img{
 footer .footer_list-box{
     width: 70vw;
     background-color: #327f92;
-    /* margin:0 ; */
-    /* display:block; */
+   
    
     padding: 1rem 5rem;
 }
@@ -465,6 +459,166 @@ footer .footer_list-box{
     align-items: center;
     justify-content: center;
 }
+
+/* This Part is for the Carousel */
+
+
+
+.card-list{
+    max-width: 1250px;
+    position: relative;
+    display: flex;
+    font-size: 0;
+    cursor: pointer;
+    white-space: wrap;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    
+    
+
+    
+    
+}
+.container{
+   position: relative;
+   top: 20px;
+   /* transform: translateY(-50%); */
+   left: 10%;
+   width:78vw;
+   
+  
+   
+}
+.carousel{
+    /* border: 2px solid; #000; */
+    /* background: transparent; */
+    height:60vh ;
+    border-radius: 10px;
+    border-top: 1px solid #e5e8eb ;
+    border-bottom:2px solid #fcfdfd ;
+}
+
+.container i{
+    top: 50%;
+    background: white;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 46px;
+    border-radius: 50%;
+    font-size:1.2rem ;
+    position: absolute;
+    transform: translateY(-50%);
+    
+}
+.container i:first-child{
+    left: -5%;
+    top: 50%;
+}
+.container i:last-child{
+    right: -5%;
+    top: 50%;
+
+}
+
+.box1 , .box2{
+    margin-top: 5%;
+    
+}
+
+
+
+
+.card-list .card-item .card-link{
+    width: 400px;
+    display: block;
+    background:#dde4ffa2;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0px 10px 10px  #00000005;
+    transition: 0.2 ease;
+    
+    
+}
+ .card-item{
+    list-style: none;
+    margin-left:15px ;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color:#5372f0
+}
+
+
+.card-list .card-link .badge{
+    color: #070707;
+    font-size:1.3rem;
+    font-weight: 500;
+    padding:8px 16px;
+    margin:16px 0 18px ;
+    background: #dde4ff52;
+    width: fit-content;
+    border-radius: 20px;
+   
+
+}
+
+
+
+.card-list .card-link .card-title.purpose{
+    font-size: 1.19rem;
+    color: #fffefe;
+    font-weight: 600;
+    border-radius: 50px;
+    background: #33d39e88;
+    box-shadow: 0 10px 10px 0 #0000003d;
+    width:350px  ;
+    text-align: center;
+    padding: 10px;
+
+}
+.card-list .card-link .card-title.Values{
+    font-size: 1.19rem;
+    color: #fff7f7;
+    font-weight: 600;
+    border-radius: 50px;
+    background: #0937ce71;
+    box-shadow: 0 10px 10px 0 #0000003d;
+    width:350px  ;
+    text-align: center;
+    padding: 10px;
+
+}
+.card-list .card-link .card-title.Mission{
+    font-size: 1.19rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 50px;
+    background: #1fc7dd;
+    box-shadow: 0 10px 10px 0 #0000003d;
+    width:350px  ;
+    text-align: center;
+    padding: 10px;
+
+}
+.card-list .card-link .card-title.vision{
+    font-size: 1.19rem;
+    color: #fffafa;
+    font-weight: 600;
+    border-radius: 50px;
+    background: #0da2f8;
+    box-shadow: 0 10px 10px 0 #0000003d;
+    width:350px  ;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
 
 @media (max-width:1024px) {
    
