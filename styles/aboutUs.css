@@ -206,7 +206,7 @@ width: max-content;
 .our-story h4{
     margin-bottom: 20px;
     font-weight:bold;
-    color: #327f92;
+    color: #e8edee;
     font-size: 3em;
     font-style: italic;
     margin-left: 35rem;
@@ -217,14 +217,14 @@ width: max-content;
 font-size: 1.5em;
 font-style: italic;
 font-family: cursive;
-color: #327f92;
-margin-left: 25rem;
+color: #fafafa;
+margin-left: 30rem;
 
 }
 .story{
-margin-left: 18rem;
+margin-left: 10rem;
 line-height: 150% ;
-width: 70vw;
+width: 80vw;
 /* height: 200px; */
 /* font-style: italic; */
 font-size: 1.2rem ;
@@ -250,7 +250,7 @@ background-color: #f5f7f61e;
 
 /* This Part is for the Carousel */
 .carousel{
-    height:70vh ;
+    height:80vh ;
     background:#FFF;
     border-top:2px solid #FFF ;
     border-bottom:2px solid #FFF ;
