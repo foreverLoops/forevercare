@@ -107,19 +107,14 @@ body{
  /* About Us Section */
 
 
- .heading-center
-.about-us {
-    padding: 20px;
-    background-color: #1aeaf1;
-}
  
 .about-us h2 {
-    text-align: center;
+    
     margin-bottom: 20px;
     font-size:50px;
-}
-   
-.aboutUsContent{
+   text-align: center;
+ } 
+.aboutUsContent {
     background: url(/media/Backgroundimage.png);
     
     background-position: center;
@@ -135,6 +130,8 @@ body{
     height: 50vh;
     display: flex;
     align-items: center;
+   color:black;  
+    
     
 }
 .aboutUsHeader h2{
@@ -261,10 +258,13 @@ width: 1000px;
     background-color:#327f92;
    font-size: medium;
    color:white;
-   
+    
   
 }
 
+.h3{
+    color: #00bfa5;
+}
 .heading-center{
     display: flex;
     align-items: center;
@@ -273,44 +273,83 @@ width: 1000px;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
 }
- 
-
- 
-.doctor-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
- 
-.doctor {
-    margin: 0 10px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 15px;
-    
-    
-}
- 
-.doctor img {
-    width: 200px;
-    height: 300px;
-    border-radius: 50px;
-    margin-bottom: 10px;
-    object-fit: cover;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
     padding: 20px;
-    box-sizing: border-box;
+}
+ 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     
-    
+}
+ 
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    gap: 20px;
+}
+ 
+.doctor-img {
+   
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 0 auto 15px;
+    object-fit: cover;
+    justify-content: center; 
+    border:3px white;
+   
+   
+
+
 
 }
+ 
+h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #327f92;
+}
+ 
+ .occupation{
+    color:#327f92;
+    font-weight: bold;
+    
+   
+    background-color:#BBE6E4;
+    color:#327f92;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+
+ 
+
+  
 
 
  
 /* Development Team Section */
 body {
     font-family: Arial, sans-serif;
-    background-color: lightcyan;
+    background-color: white;
     margin: 0;
     /* padding: 50px 0; */
     
@@ -320,6 +359,7 @@ body {
 .team-section {
     text-align: center;
     padding:50px 0;
+    color: #327f92;
     
 }
 .profileImage{
@@ -327,6 +367,7 @@ body {
     height: 150px;
     
     border-radius: 100%;
+   
 }
 
  
@@ -340,7 +381,7 @@ body {
 }
  
 .team-member {
-    background-color:  #BBE6E4;
+    background-color:  #327f92;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -354,8 +395,8 @@ body {
     margin: 0 auto 10px;
     object-fit: cover;
     justify-content: center; 
-    border:3px solid #327f92;
-    
+    border:3px white;
+   
 
     
 }
@@ -364,15 +405,18 @@ body {
     margin-top: 1.5rem;
     font-weight: bold;
     font-size: 15px;
+    color: white;
 }
  
 .quote {
     font-style: italic;
     margin: 10px 0;
+    color: white;
 }
  
 .social-icons {
     margin-top: 10px;
+    
     
 }
  
@@ -386,9 +430,12 @@ body {
 .social-icons img {
     width: 20px;
     height: 20px;
+    color: white;
     
     
     
+
+
 }
  
 /* FOOTER */
