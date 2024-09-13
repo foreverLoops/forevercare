@@ -1,18 +1,16 @@
-import {clinicalSummary,documents,medications,timeline } from "/scripts/portalData.js";
+import { clinicalSummary, documents, feedback, medications, notice, timeline } from "/scripts/portalData.js";
 
 console.log(timeline)
-/*
-TODO
-event listeners in navbar and sidebar
-use DOM manipulation to render content in and out
-*/
+
 
 let rightSidebar = document.querySelector(".sidebar");
 let rightSidebarLinks = rightSidebar.querySelectorAll("li");
 let display = document.querySelector(".display");
 
+display.innerHTML = notice;
+
 rightSidebarLinks[0].addEventListener("click",function() {
-    display.innerHTML = appointments;
+    display.innerHTML = notice//appointments;
 });
 
 rightSidebarLinks[1].addEventListener("click",function() {
@@ -24,7 +22,7 @@ rightSidebarLinks[2].addEventListener("click",function() {
 });
 
 rightSidebarLinks[3].addEventListener("click",function() {
-    display.innerHTML = library;
+    display.innerHTML = notice//library;
 });
 
 rightSidebarLinks[4].addEventListener("click",function() {
@@ -32,11 +30,11 @@ rightSidebarLinks[4].addEventListener("click",function() {
 });
 
 rightSidebarLinks[5].addEventListener("click",function() {
-    display.innerHTML = messages;
+    display.innerHTML = notice//messages;
 });
 
 rightSidebarLinks[6].addEventListener("click",function() {
-    display.innerHTML = survey;
+    display.innerHTML = feedback;
 });
 
 rightSidebarLinks[7].addEventListener("click",function() {
@@ -44,9 +42,9 @@ rightSidebarLinks[7].addEventListener("click",function() {
 });
 
 rightSidebarLinks[8].addEventListener("click",function() {
-    display.innerHTML = visits;
+    display.innerHTML = notice//visits;
 });
 
 rightSidebarLinks[9].addEventListener("click",function() {
-    display.innerHTML = wellness;
+    display.innerHTML = notice//wellness;
 });

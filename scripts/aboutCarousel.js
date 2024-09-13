@@ -45,4 +45,13 @@ carousel.addEventListener("mouseup" , dragStop);
 
 
 
+carousel.forEach(carousel => {
+    const carouselInner = carousel.querySelector(".card-list");
+    const carouselContent = Array.from(carouselInner.children);
+})
 
+carouselContent.forEach(item =>{
+    const duplicate = item.cloneNode(true)
+    carouselInner.appendChild(duplicate);
+    carouselInner.style.animation = "move 12s linear infinite"
+})

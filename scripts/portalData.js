@@ -4,6 +4,65 @@ event listeners in navbar and sidebar
 use DOM manipulation to render content in and out
 */
 
+export let notice = `
+        <style>
+                .display{
+                    height: 100%
+                }
+        </style>
+        <aside class="right-sidebar">
+          <div class="announcements">
+            <h3>Announcements</h3>
+            <p>
+              Evaluation of adult patients with any undiagnosed sign, symptom,
+              or health concern.
+            </p>
+            <p>
+              To do this effectively, one must recognize the classic and
+              atypical presentations.
+            </p>
+            <p>
+              Patient Participation Group (PPG) - Your Opinion Counts. The
+              Practice has had a Patient Participation Group for over four
+              years.
+            </p>
+            <p>
+              Evaluation of adult patients with any undiagnosed sign, symptom,
+              or health concern.
+            </p>
+            <p>
+              To do this effectively, one must recognize the classic and
+              atypical presentations.
+            </p>
+            <p>
+              Patient Participation Group (PPG) - Your Opinion Counts. The
+              Practice has had a Patient Participation Group for over four
+              years.
+            </p>
+          </div>
+          <div class="medications">
+            <h3>Active Medications</h3>
+            <ul>
+              <li>Amoxicillin - 1.0 mg QDPC for 5 days</li>
+              <li>
+                Warfarin - 2 tablet(s) once a month at bedtime for 4 months,
+                oral route
+              </li>
+              <li>Warfarin - 5 tablet(s) for 5 days, oral route</li>
+              <li>Metformin - 1 tablet daily, oral route</li>
+              <li>Amoxicillin - 1.0 mg QDPC for 5 days</li>
+              <li>
+                Warfarin - 2 tablet(s) once a month at bedtime for 4 months,
+                oral route
+              </li>
+              <li>Warfarin - 5 tablet(s) for 5 days, oral route</li>
+              <li>Metformin - 1 tablet daily, oral route</li>
+            </ul>
+          </div>
+        </aside>
+`
+
+
 export let timeline = `
         <div class="search-bar">
         <input
@@ -332,3 +391,86 @@ export let documents = `
         </table>
     </div>
     `;
+
+export let feedback = `
+    <style>
+        form{
+            margin-left: 10vw;
+            border: 3px solid #0000000c;
+            border-radius: 5px;
+            width:40vw;
+            background-color: aliceblue;
+    
+    
+        }
+
+        input[type="radio"]{
+            margin-top:5px ;
+            margin-bottom:10px ;
+            margin-left: 10px;
+        }
+
+        .experience{
+            display: flex;
+            flex-direction: column;
+            margin-top:2px;
+            margin-left: 5px;
+            padding: 10px;
+        }
+    </style>
+
+    <form>
+        <h1>User Feedback Form</h1>
+        <section>
+            <div class="patientInfo">
+                <label for="name">First Name:</label> <input id="firstName" type="text">
+            </div>
+            <div class="patientLast">
+                <span class="labelInfo"><label for="lastName" >Last Name:</span> <input id="lastName" type="text"></label>
+            </div>
+        </section>
+
+        <section>
+            <div class="userEmail">
+                <label for="email">Email:</label>
+                <input id="email" type="email">
+            </div>
+        </section>
+
+        <section>
+            <h3>1.How was your experience using the Website ?</h3>
+            <div class="experience">
+                <label><name="exp" type="radio"> Not Satisfied</label>
+                <label><input name="exp" type="radio"> Satisfied</label>
+                <label><input name="exp" type="radio"> Satisfied enough to tell others</label>
+            </div>
+
+            <h3>2.Was the Website easy to navigate ?</h3>
+            <div class="experience">
+                <label><input name="easy" type="radio"> Yes</label>
+                <label><input name="easy" type="radio"> No</label>
+            </div>
+            <h3>3.Did you experience any technical difficulties ?</h3>
+            <div class="experience">
+                <label><input name="technical" type="radio"> Yes</label>
+                <label><input name="technical" type="radio"> No</label>
+            </div>
+            <h3>4.Would you recommend the website to others ?</h3>
+            <div class="experience">
+                <label><input name="recommend" type="radio"> Yes</label>
+                <label><input name="recommend" type="radio"> No</label>
+            </div>
+        </section>
+        <section>
+            <h3>5.Please leave any Feedback:</h3>
+            <div>
+                <textarea rows="3" cols="0" ></textarea>
+            </div>
+        </section>
+        <div class="submitButtonContainer">
+            <button id="submitButton" type="submit" >Submit</button>
+            <span style=""><button id="exit">Exit</button></span>
+        </div>
+        
+    </form>
+`;
