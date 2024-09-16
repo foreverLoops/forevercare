@@ -527,28 +527,14 @@ body {
     margin: 10px 0;
     color: white;
 }
- 
-.social-icons {
-    margin-top: 10px;
-    
-    
-}
- 
-.social-icons a {
-    margin: 0 5px;
-    display: inline-block;
-    
-
-}
- 
-.social-icons img {
-    width: 20px;
-    height: 20px;
-    color: white;
-    gap:0.5rem
+.fa-brands{
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+    margin-right: 10px;
 
 
 }
+
  
 /* FOOTER */
 footer{
