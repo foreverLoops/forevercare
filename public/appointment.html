@@ -14,19 +14,22 @@
 </head>
 
 <body>
+    
     <main>
         <!-- This part is for the heading and the home button -->
+        
     <div class="container">
          <heading>
+            <aside class="homeIcon"><a href="/index.html"><img class="homeIconImg" src="/media/logo.png" width="80" title="This will take you to the Home Page"></a></aside>
+
             <div class="heading">
-                <aside><a href="/index.html"><img src="/media/logo.png" width="80" title="This will take you to the Home Page"></a></aside>
-                <h1>Patient <span class="heading-form"> Appointment Form</span></h1>
+                <h1><span class="heading-form1">Patient</span> <span class="heading-form"> Appointment Form</span></h1>
             </div>
         </heading>
 
         <form>
                    <!-- This part if the top part of the form until contact preference -->
-        <section>
+            <section>
                     <div class="info-details">
                         <span class="info-global01"><label for="name" >Name & Surname</label></span>
                             <input class="info" id ="name" name="Name" type="text" placeholder="e.g John Doe" required>
@@ -49,10 +52,10 @@
 
                     <div class="info-details">
                         <span><label  for="contact" >Contact Preference:</label></span>
-                        <div class="radio01">
+                        
                             <div><label><input id="contact"  name="contact" type="radio"> Phone</label></div>
                             <div><label><input  name="contact" type="radio"> Email</label></div>
-                        </div>
+                       
                     </div> 
 
                 </section>
@@ -60,7 +63,7 @@
             <!-- This part is for the Medical appointments  -->
 
                 <section class="appointment_info">
-                    <h2>Medical Departments of <span class="heading-form"> Appointments</span></h2>
+                    <h2>Medical Departments of <span class="heading-form">Appointments</span></h2>
                         <p>Please Select Your Appointment:</p>  
                     <div class="app01">
                        <ul>
@@ -97,7 +100,7 @@
                 </section>
                 
                 <section >
-                        <table cellspacing="10" cellpadding="5">
+                        <!-- <table cellspacing="10" cellpadding="5">
                                 
                     <div class="date">
                                 <th class="month" colspan="7">August 2024</th>
@@ -161,14 +164,14 @@
                                         <td>31</td>
                                     </tr>
                             </div>
-                        </table>
+                        </table> -->
                     
                         <div class="app-time" >
                             <label class="time" >Time of the Appointment:
-                                <input type="time" required>
+                                <input type="datetime-local" required>
                             </label>
                         </div>
-                    </div>    
+                
                 </section>
 
                 <section >
@@ -176,8 +179,8 @@
                         <button type="submit">SCHEDULE APPOINTMENT</button>
                     </div>
                 </section>
-                    
-            </form>
+            </form>           
+          
 
 
 

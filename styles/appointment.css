@@ -5,19 +5,21 @@
 body{
     margin: 0%;
     padding: 0%;
-    background-image: url(/media/backgroundForm.webP);
+    background-image:url(/media/backgroundForm.webP) ;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;  ;
+    background-repeat: no-repeat;
     color: rgb(255, 255, 255 ) ;
-    font-family: "Merriweather", serif;
     font-weight: 200;
     font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    
 
 }
 
+
 form{
-    background:#56B5E3  ;
+    background: #42beddb9 ;
+    border: 2px solid #fff;
     border-radius: 10px;
     width: 55vw;
     padding:30px;
@@ -41,7 +43,7 @@ h1{
     display: inline;
 }
 
-aside{
+.homeIcon{
     font-size: 20px;
     padding: 10px;
     display: inline;
@@ -50,7 +52,7 @@ aside{
 }
 
 
-img{
+.homeIconImg{
     border: 2px solid rgba(255, 255, 255, 0.158);
     border-radius: 50%;
     background-color: #fff;
@@ -65,7 +67,7 @@ img{
 
 }
 
-img:hover{
+.homeIconImg:hover{
     transform: scale(1.1);
     transition:1s ;
 }
@@ -94,7 +96,6 @@ section{
     font-size: 1em;
     
 }
-
 
 
 
@@ -259,7 +260,6 @@ td:hover{
 
 input[type="time"]{
     cursor: pointer;
-    background-color: transparent;
     border: none;
     border-radius: 5px;
     width:80px;
@@ -267,7 +267,7 @@ input[type="time"]{
 }
 
 .submit_button{
-    margin-left:500px
+    margin-left: 20vw;
 }
 
 button[type="submit"]{
@@ -279,15 +279,14 @@ button[type="submit"]{
     box-shadow:0 12px 16px 0 #2fc86ca4 0 17px 50px 0 #abe0ee;
     cursor: pointer;
     margin-bottom: 20px;
-    background-color: #6cdad4;
+    background-color: #2FC86C;
 
 }
 
 button:hover{
-    
     box-shadow:0 0 3px 2px #6cdad4 ;
-
 }
+
 .app01{
     justify-content: space-between;
 }
@@ -300,8 +299,14 @@ button:hover{
 }
 
 .time{
-    margin-left: 15vw;
-   
+    margin-left: 10vw;
+}
+input[type="datetime-local"]{
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    background:transparent;
+    border-radius: 10px;
 }
 
 @media (max-width:1024px ){
@@ -310,13 +315,7 @@ button:hover{
         margin:0 auto;
     }
 
-    body{
-        
-        background-image: url(/media/backgroundForm.webP);
-        background-size:cover  ;
-        background-position: center;
-  
-    }
+   
     h1{
         font-size: 35px;
         margin-left: 150px;
@@ -326,6 +325,10 @@ button:hover{
     text-align: left;
     
     }
+   .info-details {
+    display: inline-flex;
+   
+}
 
     img{position:relative  ;
         width: 70px;
@@ -388,13 +391,7 @@ button:hover{
 }
 @media (max-width:768px ){
     
-    body{
-        
-        background-image: url(/media/backgroundForm.webP);
-        background-size:cover  ;
-        background-position:center ;
-  
-    }
+    
     .info{
         margin-bottom:10px ;
        
@@ -404,7 +401,7 @@ button:hover{
     
         width: 75vw;
         padding: 5px;
-        border:1px solid #56B5E3;
+        border:1px solid #56b4e328;
         margin: 0;
         margin-top: 45px;
         margin-left:90px
@@ -440,19 +437,19 @@ button:hover{
         margin: 0 auto;
     }
 }
+
 @media (max-width:425px){
     h1{
         margin-left: 150px;
         font-size: 35px;
     }
+    
 
-    .heading-form{
+     .heading-form{
         margin-left: 50px ;
         
-    }
-    aside{
-        position: static;
-    }
+    } 
+    
 
     form{
         width: 85vw;
@@ -524,7 +521,7 @@ button:hover{
     }
 @media (max-width:375px){
     form{
-        border:1px solid #56B5E3;
+        
         width:100vw
 
     }
@@ -533,23 +530,41 @@ button:hover{
         font-size: 25px;
     } 
 
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
     aside{
         position: static;
     }
 }
 @media (max-width: 320px){
-    h1{
-        margin-left: 100px;
+    .heading{
+        margin-left: 10px;
         font-size: 25px;
+        margin-top: 0;
     } 
 
+   
     form{
-        border-color: black;
-        margin:10px auto;
+      
+        margin:0px 20px;
         padding:10px;
-        width:80vw;
-        border:1px solid #56B5E3;
+        width:100vw;
+        
 
+    }
+
+    .container{
+        margin-top: 0 ;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column-reverse;
+        
     }
 }
 
